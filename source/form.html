@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -47,7 +48,14 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="slogan">
         <h2 class="visually-hidden">Седона-это про красоту</h2>
-        <div class="slogan__wrapper"></div>
+        <div class="slogan__wrapper">
+          <img
+            src="img/sedona-title.svg"
+            width="282"
+            height="214"
+            alt="Великолепная Седона"
+          />
+        </div>
       </section>
       <section class="page-about">
         <div class="page-about__wrapper">
@@ -82,10 +90,11 @@
             <input class="feedback-form__input" type="email" required />
           </fieldset>
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__title">Ваше общее впечатление</legend>
+            <legend class="feedback-form__title">
+              Ваше общее впечатление:
+            </legend>
             <ul class="feedback-form__rating-list">
               <li class="feedback-form__rating-item">
-                <label class="feedback-form__label">Скорее положительное</label>
                 <input
                   class="feedback-form__input"
                   type="radio"
@@ -93,9 +102,9 @@
                   value="positive"
                   required
                 />
+                <label class="feedback-form__label">Скорее положительное</label>
               </li>
               <li class="feedback-form__rating-item">
-                <label class="feedback-form__label">Скорее отрицательное</label>
                 <input
                   class="feedback-form__input"
                   type="radio"
@@ -103,9 +112,9 @@
                   value="negative"
                   required
                 />
+                <label class="feedback-form__label">Скорее отрицательное</label>
               </li>
               <li class="feedback-form__rating-item">
-                <label class="feedback-form__label">Затрудняюсь ответить</label>
                 <input
                   class="feedback-form__input"
                   type="radio"
@@ -113,38 +122,39 @@
                   value="neutral"
                   required
                 />
+                <label class="feedback-form__label">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__title">
-              Посещенные достопримечательности
+              Посещенные достопримечательности:
             </legend>
             <ul class="feedback-form__attractions-list">
               <li class="feedback-form__attractions-item">
+                <input class="feedback-form__input" type="checkbox" checked />
                 <label class="feedback-form__label">Мост Дъявола</label>
-                <input class="feedback-form__input" type="checkbox" checked />
               </li>
               <li class="feedback-form__attractions-item">
+                <input class="feedback-form__input" type="checkbox" checked />
                 <label class="feedback-form__label">Гора-Колокол</label>
-                <input class="feedback-form__input" type="checkbox" checked />
               </li>
               <li class="feedback-form__attractions-item">
+                <input class="feedback-form__input" type="checkbox" checked />
                 <label class="feedback-form__label">Слайд-парк</label>
-                <input class="feedback-form__input" type="checkbox" checked />
               </li>
               <li class="feedback-form__attractions-item">
-                <label class="feedback-form__label">Красные скалы</label>
                 <input class="feedback-form__input" type="checkbox" />
+                <label class="feedback-form__label">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__title">Опишите свои эмоции</legend>
+            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
             <textarea
               class="feedback-form__textarea"
               rows="10"
-              cols="10"
+              cols="50"
               name="review"
             ></textarea>
           </fieldset>

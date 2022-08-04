@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -47,7 +48,16 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="slogan">
         <h2 class="visually-hidden">Седона-это про красоту</h2>
-        <div class="slogan__wrapper"></div>
+        <div class="slogan__wrapper">
+          <div class="slogan__wrapper">
+            <img
+              src="img/sedona-title.svg"
+              width="282"
+              height="49"
+              alt="Великолепная Седона"
+            />
+          </div>
+        </div>
       </section>
       <section class="page-about">
         <h2 class="page-about__title">Фото и видео</h2>
@@ -60,8 +70,9 @@
         <h2 class="visually-hidden">Достопримечательности Седоны</h2>
         <ul class="attractions-sightseeing__list">
           <li class="attractions-sightseeing__item">
+            <span class="attractions-sightseeing__background-road"></span>
             <span class="attractions-sightseeing__title"
-              >Ненародные просторы</span
+              >Неродные просторы</span
             >
             <span class="attractions-sightseeing__author"
               >Автор фото: Борис</span
@@ -72,6 +83,7 @@
             </button>
           </li>
           <li class="attractions-sightseeing__item">
+            <span class="attractions-sightseeing__background-flora"></span>
             <span class="attractions-sightseeing__title"
               >Местная растительность</span
             >
@@ -84,6 +96,7 @@
             </button>
           </li>
           <li class="attractions-sightseeing__item">
+            <span class="attractions-sightseeing__background-serpentine"></span>
             <span class="attractions-sightseeing__title">Дорога на север</span>
             <span class="attractions-sightseeing__author"
               >Автор фото: Петр</span
@@ -94,6 +107,7 @@
             </button>
           </li>
           <li class="attractions-sightseeing__item">
+            <span class="attractions-sightseeing__background-bridge"></span>
             <span class="attractions-sightseeing__title">Мост дъявола</span>
             <span class="attractions-sightseeing__author"
               >Автор фото: Антон</span
@@ -120,7 +134,7 @@
       </section>
     </main>
     <footer class="footer">
-      <h2 class="footer__title">#Visitsedona</h2>
+      <h2 class="footer__hashtag">#Visitsedona</h2>
       <section class="footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
