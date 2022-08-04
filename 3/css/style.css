@@ -1,0 +1,348 @@
+.main-header__logo {
+  margin-left: 67px;
+  margin-right: 68px;
+}
+.main-nav__wrapper {
+  display: flex;
+}
+.main-nav__list {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.main-nav__list-item {
+  padding-top: 17px;
+  padding-bottom: 12px;
+  padding-left: 109px;
+  padding-right: 108px;
+}
+.main-nav__list-item__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.slogan {
+  background: url("../img/back-mobile.jpg") no-repeat;
+  height: 389px;
+}
+.slogan__wrapper {
+  display: flex;
+  width: 282px;
+  margin-left: 19px;
+}
+.page-about__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-top: 32px;
+}
+.page-about__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-top: 32px;
+}
+.page-about__reasons {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0;
+  margin-top: 35px;
+}
+.page-about__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0;
+  margin-top: 35px;
+}
+.advantages-catalog {
+  margin-top: 35px;
+}
+.advantages-catalog__item:nth-child(1) > .advantages-catalog__title,
+.advantages-catalog__item:nth-child(2) > .advantages-catalog__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.advantages-catalog__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.advantages-catalog__item:nth-child(1) > .advantages-catalog__number,
+.advantages-catalog__item:nth-child(2) > .advantages-catalog__number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.advantages-catalog__number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.advantages-catalog__item:nth-child(1) > .advantages-catalog__description,
+.advantages-catalog__item:nth-child(2) > .advantages-catalog__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.advantages-catalog__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.advantages-catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.advantages-catalog__background-city {
+  display: flex;
+  background: url("../img/city.jpg") no-repeat;
+  height: 260px;
+  background-color: #ffffff;
+}
+.advantages-catalog__background-bridge {
+  display: flex;
+  background: url("../img/bridge.jpg") no-repeat;
+  height: 260px;
+  background-color: #ffffff;
+}
+.advantages-catalog__item:nth-child(1) {
+  background-color: #81b3d2;
+}
+.advantages-catalog__item:nth-child(2) {
+  background-color: #81b3d2;
+}
+.advantages-catalog__item {
+  background-color: #eeeeee;
+}
+.addition-list {
+  background-color: #ffffff;
+}
+.addition-list__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.addition-list__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.page-accomodation {
+  margin-top: 38px;
+}
+.page-accomodation__notice {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.page-accomodation__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.page-accomodation__link {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.page-accomodation__map {
+  display: flex;
+  height: 350px;
+  background: url("/img/map.jpg") no-repeat;
+}
+.footer {
+  margin-top: 10px;
+}
+.footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.social__list {
+  margin-top: 34px;
+  display: flex;
+  list-style: none;
+}
+.footer__copyright {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.attractions-sightseeing {
+  margin-top: 45px;
+}
+.attractions-sightseeing__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.attractions-sightseeing__item {
+  margin-top: 50px;
+}
+.attractions-sightseeing__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.attractions-sightseeing__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.attractions-sightseeing__likes {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.attractions-sightseeing__background-road {
+  display: flex;
+  background: url("../img/road.jpg") no-repeat;
+  height: 280px;
+}
+.attractions-sightseeing__background-flora {
+  display: flex;
+  background: url("../img/cactus.jpg") no-repeat;
+  height: 280px;
+}
+.attractions-sightseeing__background-serpentine {
+  display: flex;
+  background: url("../img/serpentine.jpg") no-repeat;
+  height: 280px;
+}
+.attractions-sightseeing__background-bridge {
+  display: flex;
+  background: url("../img/bridge.jpg") no-repeat;
+  height: 280px;
+}
+.video-presentation {
+  margin-top: 43px;
+}
+.feedback-form__fieldset {
+  margin-top: 20px;
+  border: none;
+  padding: 0;
+}
+.feedback-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.feedback-form__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.feedback-form__rating-item > .feedback-form__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+.feedback-form__attractions-item > .feedback-form__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+.feedback-form__input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+.feedback-form__textarea {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+.feedback-form__button {
+  margin-top: 56px;
+  background-color: #81b3d2;
+  outline: none;
+  border: none;
+}
+.feedback-form__rating-list {
+  list-style: none;
+  padding: 0;
+}
+.feedback-form__attractions-list {
+  list-style: none;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
