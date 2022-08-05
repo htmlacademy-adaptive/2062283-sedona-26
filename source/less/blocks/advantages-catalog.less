@@ -2,31 +2,17 @@
   margin-top: 35px;
 }
 
-.advantages-catalog__item:nth-child(1) > .advantages-catalog__title,
-.advantages-catalog__item:nth-child(2) > .advantages-catalog__title {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 .advantages-catalog__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.advantages-catalog__item:nth-child(1) > .advantages-catalog__number,
-.advantages-catalog__item:nth-child(2) > .advantages-catalog__number {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+.advantages-catalog__title--city,
+.advantages-catalog__title--bridge {
   color: #ffffff;
-  margin: 0;
 }
 
 .advantages-catalog__number {
@@ -37,14 +23,9 @@
   margin: 0;
 }
 
-.advantages-catalog__item:nth-child(1) > .advantages-catalog__description,
-.advantages-catalog__item:nth-child(2) > .advantages-catalog__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+.advantages-catalog__number--city,
+.advantages-catalog__number--bridge {
   color: #ffffff;
-  margin: 0;
 }
 
 .advantages-catalog__description {
@@ -52,8 +33,12 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-
   margin: 0;
+}
+
+.advantages-catalog__description--city,
+.advantages-catalog__description--bridge {
+  color: #ffffff;
 }
 
 .advantages-catalog__list {
@@ -62,42 +47,43 @@
   padding: 0;
 }
 
-.advantages-catalog__background-city {
-  display: flex;
-  background: url("../img/city.jpg") no-repeat;
-  height: 260px;
-  background-color: #ffffff;
-}
-
-.advantages-catalog__background-bridge {
-  display: flex;
-  background: url("../img/bridge.jpg") no-repeat;
-  height: 260px;
-  background-color: #ffffff;
-}
-
-.advantages-catalog__item:nth-child(1) {
-  background-color: #81b3d2;
-}
-
-.advantages-catalog__item:nth-child(2) {
-  background-color: #81b3d2;
-}
-
 .advantages-catalog__item {
   background-color: #eeeeee;
 }
 
-.addition-list {
-  background-color: #ffffff;
+.advantages-catalog__item--city {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("../img/city.jpg") no-repeat;
+  background-position-x: left;
+  background-position-y: 80px;
+  height: 360px;
+  background-color: #81b3d2;
+}
 
+.advantages-catalog__item--bridge {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("../img/bridge.jpg") no-repeat;
+  background-position-x: left;
+  background-position-y: 80px;
+  height: 360px;
+  background-color: #81b3d2;
+}
+
+.addition-list {
+  margin-top: 280px;
+  background-color: #ffffff;
 }
 
 .addition-list__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  }
+}
 
 .addition-list__description {
   font-weight: 400;

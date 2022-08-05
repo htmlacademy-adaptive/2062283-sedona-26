@@ -23,22 +23,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item__link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item__link" href="catalog.html"
-                >Фото и видео</a
-              >
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item__link" href="form.html"
-                >Форма отзыва</a
-              >
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item__link" href="htmlacademy.ru"
-                >Html Academy</a
-              >
+              <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -69,13 +63,22 @@
       <section class="advantages-catalog">
         <h2 class="visually-hidden">Список преимуществ</h2>
         <ol class="advantages-catalog__list">
-          <li class="advantages-catalog__item">
-            <h3 class="advantages-catalog__title">Настоящий городок</h3>
-            <p class="advantages-catalog__number">-№1-</p>
-            <p class="advantages-catalog__description">
+          <li class="advantages-catalog__item advantages-catalog__item--city">
+            <h3
+              class="advantages-catalog__title advantages-catalog__title--city"
+            >
+              Настоящий городок
+            </h3>
+            <p
+              class="advantages-catalog__number advantages-catalog__number--city"
+            >
+              -№1-
+            </p>
+            <p
+              class="advantages-catalog__description advantages-catalog__description--city"
+            >
               Седона не аттракцион для туристов, там течет своя жизнь
             </p>
-            <span class="advantages-catalog__background-city"></span>
             <ul class="advantages-catalog__list addition-list">
               <li class="addition-list__item">
                 <span class="addition-list__title">Жилье</span>
@@ -97,13 +100,22 @@
               </li>
             </ul>
           </li>
-          <li class="advantages-catalog__item">
-            <h3 class="advantages-catalog__title">Там есть мост дъявола</h3>
-            <p class="advantages-catalog__number">-№2-</p>
-            <p class="advantages-catalog__description">
+          <li class="advantages-catalog__item advantages-catalog__item--bridge">
+            <h3
+              class="advantages-catalog__title advantages-catalog__title--bridge"
+            >
+              Там есть мост дъявола
+            </h3>
+            <p
+              class="advantages-catalog__number advantages-catalog__number--bridge"
+            >
+              -№2-
+            </p>
+            <p
+              class="advantages-catalog__description advantages-catalog__description--bridge"
+            >
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
-            <span class="advantages-catalog__background-bridge"></span>
           </li>
           <li class="advantages-catalog__item">
             <h3 class="advantages-catalog__title">Небольшая площадь</h3>
@@ -137,7 +149,9 @@
             предложения гостиниц в Седоне
           </p>
           <a class="page-accomodation__link" href="#"> Найти гостиницу </a>
-          <span class="page-accomodation__map"></span>
+          <div class="page-accomodation__map">
+            <iframe src="#" frameborder="0"></iframe>
+          </div>
         </div>
       </section>
     </main>
