@@ -6,7 +6,6 @@
   display: flex;
 }
 .main-nav__list {
-  display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -26,37 +25,10 @@
   text-decoration: none;
   color: #ffffff;
 }
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
 .page__body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
   padding: 0;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .slogan {
   background: url("../img/back-mobile.jpg") no-repeat;
@@ -74,6 +46,7 @@
   line-height: 26px;
   color: #000000;
   margin-top: 32px;
+  text-transform: uppercase;
 }
 .page-about__title {
   font-weight: 700;
@@ -82,6 +55,7 @@
   color: #000000;
   margin: 0;
   margin-top: 32px;
+  text-transform: uppercase;
 }
 .page-about__reasons {
   font-weight: 400;
@@ -90,6 +64,7 @@
   color: #333333;
   margin: 0;
   margin-top: 35px;
+  text-transform: uppercase;
 }
 .page-about__description {
   font-weight: 400;
@@ -98,6 +73,7 @@
   color: #333333;
   margin: 0;
   margin-top: 35px;
+  text-transform: uppercase;
 }
 .advantages-catalog {
   margin-top: 35px;
@@ -114,13 +90,17 @@
   color: #ffffff;
 }
 .advantages-catalog__number {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  color: #333333;
 }
-.advantages-catalog__number--city,
+.advantages-catalog__number--city {
+  font-weight: 700;
+  color: #ffffff;
+}
 .advantages-catalog__number--bridge {
   color: #ffffff;
 }
@@ -130,6 +110,7 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  color: #333333;
 }
 .advantages-catalog__description--city,
 .advantages-catalog__description--bridge {
@@ -170,12 +151,14 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 .addition-list__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-transform: uppercase;
 }
 .page-accomodation {
   margin-top: 38px;
@@ -204,7 +187,7 @@
 .page-accomodation__map {
   display: flex;
   height: 350px;
-  background: url("/img/map.jpg") no-repeat;
+  background: url("../../img/map.jpg") no-repeat;
 }
 .footer {
   margin-top: 10px;
@@ -215,11 +198,6 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-}
-.social__list {
-  margin-top: 34px;
-  display: flex;
-  list-style: none;
 }
 .footer__copyright {
   text-decoration: none;
@@ -250,34 +228,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  color: #333333;
 }
 .attractions-sightseeing__likes {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
 }
-.attractions-sightseeing__background-road {
-  display: flex;
-  background: url("../img/road.jpg") no-repeat;
-  height: 280px;
-}
-.attractions-sightseeing__background-flora {
-  display: flex;
-  background: url("../img/cactus.jpg") no-repeat;
-  height: 280px;
-}
-.attractions-sightseeing__background-serpentine {
-  display: flex;
-  background: url("../img/serpentine.jpg") no-repeat;
-  height: 280px;
-}
-.attractions-sightseeing__background-bridge {
-  display: flex;
-  background: url("../img/bridge.jpg") no-repeat;
-  height: 280px;
-}
 .video-presentation {
   margin-top: 43px;
+}
+.video-presentation__description {
+  color: #333333;
 }
 .feedback-form__fieldset {
   margin-top: 20px;
@@ -295,6 +257,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: #333333;
+}
+.feedback-form__label--rating,
+.feedback-form__label--attractions {
+  color: #000000;
 }
 .feedback-form__rating-item > .feedback-form__label {
   font-weight: 700;
@@ -314,16 +281,33 @@
   outline: none;
 }
 .feedback-form__textarea {
+  font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   border: none;
   outline: none;
   margin-top: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 .feedback-form__button {
   margin-top: 56px;
   background-color: #81b3d2;
   outline: none;
   border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }
 .feedback-form__rating-list {
   list-style: none;
@@ -332,5 +316,37 @@
 .feedback-form__attractions-list {
   list-style: none;
   padding: 0;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.social__list {
+  margin-top: 34px;
+  display: flex;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

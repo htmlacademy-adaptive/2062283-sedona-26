@@ -24,22 +24,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item-link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item-link" href="catalog.html"
-                >Фото и видео</a
-              >
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item-link" href="form.html"
-                >Форма отзыва</a
-              >
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__list-item-link" href="htmlacademy.ru"
-                >Html Academy</a
-              >
+              <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -103,7 +97,9 @@
                   value="positive"
                   required
                 />
-                <label class="feedback-form__label">Скорее положительное</label>
+                <label class="feedback-form__label feedback-form__label--rating"
+                  >Скорее положительное</label
+                >
               </li>
               <li class="feedback-form__rating-item">
                 <input
@@ -113,7 +109,9 @@
                   value="negative"
                   required
                 />
-                <label class="feedback-form__label">Скорее отрицательное</label>
+                <label class="feedback-form__label feedback-form__label--rating"
+                  >Скорее отрицательное</label
+                >
               </li>
               <li class="feedback-form__rating-item">
                 <input
@@ -123,7 +121,9 @@
                   value="neutral"
                   required
                 />
-                <label class="feedback-form__label">Затрудняюсь ответить</label>
+                <label class="feedback-form__label feedback-form__label--rating"
+                  >Затрудняюсь ответить</label
+                >
               </li>
             </ul>
           </fieldset>
@@ -134,19 +134,31 @@
             <ul class="feedback-form__attractions-list">
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" checked />
-                <label class="feedback-form__label">Мост Дъявола</label>
+                <label
+                  class="feedback-form__label feedback-form__label--attractions"
+                  >Мост Дъявола</label
+                >
               </li>
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" checked />
-                <label class="feedback-form__label">Гора-Колокол</label>
+                <label
+                  class="feedback-form__label feedback-form__label--attractions"
+                  >Гора-Колокол</label
+                >
               </li>
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" checked />
-                <label class="feedback-form__label">Слайд-парк</label>
+                <label
+                  class="feedback-form__label feedback-form__label--attractions"
+                  >Слайд-парк</label
+                >
               </li>
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" />
-                <label class="feedback-form__label">Красные скалы</label>
+                <label
+                  class="feedback-form__label feedback-form__label--attractions"
+                  >Красные скалы</label
+                >
               </li>
             </ul>
           </fieldset>
@@ -157,6 +169,7 @@
               rows="10"
               cols="50"
               name="review"
+              placeholder="Опишите подробно все свои восторги"
             ></textarea>
           </fieldset>
           <button class="button feedback-form__button" type="submit">
