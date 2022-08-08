@@ -16,6 +16,12 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: #333333;
+}
+
+.feedback-form__label--rating,
+.feedback-form__label--attractions {
+  color: #000000;
 }
 
 .feedback-form__rating-item > .feedback-form__label {
@@ -39,10 +45,24 @@
 }
 
 .feedback-form__textarea {
+  font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   border: none;
   outline: none;
   margin-top: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .feedback-form__button {
@@ -50,6 +70,11 @@
   background-color: #81b3d2;
   outline: none;
   border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .feedback-form__rating-list {
