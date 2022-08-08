@@ -16,12 +16,14 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
 }
 
-.feedback-form__label--rating,
-.feedback-form__label--attractions {
-  color: #000000;
+.feedback-form__label--name,
+.feedback-form__label--surname,
+.feedback-form__label--patronymic,
+.feedback-form__label--phone,
+.feedback-form__label--email {
+  color: #333333;
 }
 
 .feedback-form__rating-item > .feedback-form__label {
@@ -42,6 +44,12 @@
   background-color: #f2f2f2;
   border: none;
   outline: none;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .feedback-form__textarea {
@@ -50,11 +58,12 @@
   border: none;
   outline: none;
   margin-top: 20px;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  resize: none;
 }
 
 ::-webkit-input-placeholder {
@@ -75,6 +84,8 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
 }
 
 .feedback-form__rating-list {
