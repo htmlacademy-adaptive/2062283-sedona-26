@@ -70,19 +70,39 @@
         >
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__title">Представьтесь</legend>
-            <label class="feedback-form__label">Имя*</label>
+            <label class="feedback-form__label feedback-form__label--name"
+              >Имя*</label
+            >
             <input class="feedback-form__input" type="text" required />
-            <label class="feedback-form__label">Фамилия*</label>
+            <label class="feedback-form__label feedback-form__label--surname"
+              >Фамилия*</label
+            >
             <input class="feedback-form__input" type="text" required />
-            <label class="feedback-form__label">Отчество</label>
+            <label class="feedback-form__label feedback-form__label--patronymic"
+              >Отчество</label
+            >
             <input class="feedback-form__input" type="text" />
           </fieldset>
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__title">Контактная информация</legend>
-            <label class="feedback-form__label">Контактный телефон*</label>
-            <input class="feedback-form__input" type="tel" required />
-            <label class="feedback-form__label">Электронная почта*</label>
-            <input class="feedback-form__input" type="email" required />
+            <label class="feedback-form__label feedback-form__label--phone"
+              >Контактный телефон*</label
+            >
+            <input
+              class="feedback-form__input"
+              type="tel"
+              placeholder="Введите телефон"
+              required
+            />
+            <label class="feedback-form__label feedback-form__label--email"
+              >Электронная почта*</label
+            >
+            <input
+              class="feedback-form__input"
+              type="email"
+              placeholder="Введите e-mail"
+              required
+            />
           </fieldset>
           <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__title">
@@ -97,9 +117,7 @@
                   value="positive"
                   required
                 />
-                <label class="feedback-form__label feedback-form__label--rating"
-                  >Скорее положительное</label
-                >
+                <label class="feedback-form__label">Скорее положительное</label>
               </li>
               <li class="feedback-form__rating-item">
                 <input
@@ -109,9 +127,7 @@
                   value="negative"
                   required
                 />
-                <label class="feedback-form__label feedback-form__label--rating"
-                  >Скорее отрицательное</label
-                >
+                <label class="feedback-form__label">Скорее отрицательное</label>
               </li>
               <li class="feedback-form__rating-item">
                 <input
@@ -121,9 +137,7 @@
                   value="neutral"
                   required
                 />
-                <label class="feedback-form__label feedback-form__label--rating"
-                  >Затрудняюсь ответить</label
-                >
+                <label class="feedback-form__label">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -134,31 +148,19 @@
             <ul class="feedback-form__attractions-list">
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" checked />
-                <label
-                  class="feedback-form__label feedback-form__label--attractions"
-                  >Мост Дъявола</label
-                >
+                <label class="feedback-form__label">Мост Дъявола</label>
               </li>
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" checked />
-                <label
-                  class="feedback-form__label feedback-form__label--attractions"
-                  >Гора-Колокол</label
-                >
+                <label class="feedback-form__label">Гора-Колокол</label>
               </li>
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" checked />
-                <label
-                  class="feedback-form__label feedback-form__label--attractions"
-                  >Слайд-парк</label
-                >
+                <label class="feedback-form__label">Слайд-парк</label>
               </li>
               <li class="feedback-form__attractions-item">
                 <input class="feedback-form__input" type="checkbox" />
-                <label
-                  class="feedback-form__label feedback-form__label--attractions"
-                  >Красные скалы</label
-                >
+                <label class="feedback-form__label">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -179,7 +181,7 @@
       </section>
     </main>
     <footer class="footer">
-      <h2 class="footer__title">#Visitsedona</h2>
+      <h2 class="footer__hashtag">#Visitsedona</h2>
       <section class="footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
