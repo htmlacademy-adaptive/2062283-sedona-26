@@ -18,11 +18,7 @@
   text-transform: uppercase;
 }
 
-.feedback-form__label--name,
-.feedback-form__label--surname,
-.feedback-form__label--patronymic,
-.feedback-form__label--phone,
-.feedback-form__label--email {
+.feedback-form__label-colored {
   color: #333333;
 }
 
@@ -64,6 +60,10 @@
   font-size: 18px;
   line-height: 26px;
   resize: none;
+}
+
+.feedback-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.3)
 }
 
 ::-webkit-input-placeholder {
