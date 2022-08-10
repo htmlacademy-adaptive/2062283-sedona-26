@@ -13,23 +13,31 @@
 @media (min-width: @tablet-width) {
   .main-nav__list {
   display: flex;
+  width: 100%;
   background-color: #ffffff;
-  flex-direction: space-between;
-  width: 153px;
+  justify-content: center;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: center;
+  }
 }
 
 .main-nav__list-item {
   padding-top: 18px;
   padding-bottom: 17px;
-  padding-left: 48px;
-  padding-right: 47px;
+  margin-left: 50px;
   z-index: 1;
 }
 
+@media (min-width: @tablet-width) {
 .main-nav__link {
   text-decoration: none;
-  color: #ffffff
+  color: #000000;
 }
-
+}
