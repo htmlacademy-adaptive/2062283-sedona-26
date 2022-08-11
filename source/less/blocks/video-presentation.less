@@ -1,5 +1,30 @@
 .video-presentation {
   margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.video-presentation__description {
+  width: 500px;
+  text-align: center;
+}
+.video-presentation__video {
+  background: url("../../img/video-desktop.jpg") no-repeat center;
+  width: 648px;
+  height: 500px;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation {
+    margin-top: 150px;
+  }
 }
 
 .video-presentation__notice {
