@@ -10,7 +10,29 @@
 @media (min-width: @tablet-width) {
   .main-header__logo {
     position: absolute;
+    margin: 0;
     left: 291px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    position: absolute;
+    margin: 0;
+    left: 507px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-header {
+    width: auto;
+    justify-content: space-between;
   }
 }
 

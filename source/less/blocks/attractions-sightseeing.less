@@ -1,5 +1,6 @@
 .attractions-sightseeing {
   margin-top: 45px;
+  background-color: #ffffff;
 }
 
 .attractions-sightseeing__list {
@@ -8,8 +9,44 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .attractions-sightseeing__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 347px 347px 347px;
+    grid-gap: 30px;
+    margin-left: 40px;
+  }
+
+  .attractions-sightseeing__item--road {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    min-height: 438px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions-sightseeing__list {
+    display: grid;
+    grid-template-columns: 324px 324px 324px;
+    grid-template-rows: 347px 347px;
+    grid-gap: 30px;
+  }
+
+  .attractions-sightseeing__item--road {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+    min-height: 438px;
+  }
+  .attractions-sightseeing {
+    margin: 0;
+  }
+}
+
 .attractions-sightseeing__item {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .attractions-sightseeing__title {

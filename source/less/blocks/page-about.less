@@ -1,5 +1,40 @@
+.page-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page-about {
+    width: 458px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .page-about__title {
+    text-align: center;
+  }
+
+  .page-about__description {
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-about {
+    width: auto;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .page-about__description {
+    text-align: center;
+  }
+}
+
 .page-about__slogan {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -37,3 +72,4 @@
   margin-top: 35px;
   text-transform: uppercase;
 }
+

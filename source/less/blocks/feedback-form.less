@@ -4,6 +4,63 @@
   padding: 0;
 }
 
+.feedback-form {
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form__form {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 280px 280px 280px 280px;
+    margin-left: 76px;
+  }
+
+  .feedback-form__fieldset--rating {
+    grid-column: 1 / span 2;
+  }
+
+  .feedback-form__fieldset--attractions {
+    grid-column: 1 / span 2;
+  }
+
+  .feedback-form__fieldset--review {
+    grid-column: 1 / span 2;
+  }
+
+  .feedback-form__rating-list {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 46px 46px;
+  }
+
+  .feedback-form__attractions-list {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 46px 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form__form {
+    margin-left: 120px;
+    width: auto;
+  }
+
+  .feedback-form__rating-list,
+  .feedback-form__attractions-list {
+    display: flex;
+  }
+
+  .feedback-form__fieldset--review {
+    margin-left: 50px;
+  }
+
+  .feedback-form__button {
+    margin-left: 50px;
+  }
+}
+
 .feedback-form__title {
   font-weight: 700;
   font-size: 18px;
@@ -60,10 +117,11 @@
   font-size: 18px;
   line-height: 26px;
   resize: none;
+  padding: 0;
 }
 
 .feedback-form__input::placeholder {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .feedback-form__button {
@@ -76,7 +134,6 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
 }
 
