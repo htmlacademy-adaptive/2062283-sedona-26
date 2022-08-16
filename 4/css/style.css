@@ -74,9 +74,6 @@
     margin-right: 71px;
     z-index: 1;
   }
-  .main-nav {
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
-  }
   .main-nav__wrapper {
     display: flex;
     max-width: 1280px;
@@ -98,19 +95,10 @@
   margin: 0;
   padding: 0;
 }
-@media (min-width: 1280px) {
-  .page__body {
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #e7e5e5;
-    max-width: 1280px;
-  }
-}
 .slogan {
   background: url("../img/back-mobile.jpg") no-repeat center;
   height: 389px;
   background-color: #ffffff;
-  box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
 }
 .slogan__wrapper {
   display: flex;
@@ -141,7 +129,6 @@
     width: auto;
     align-items: center;
     margin: 0 auto;
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
   }
   .page-about__description {
     text-align: center;
@@ -251,7 +238,6 @@
 @media (min-width: 1280px) {
   .advantages-catalog {
     margin: 0;
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
   }
 }
 .advantages-catalog__item--colored-wrapper {
@@ -288,7 +274,6 @@
 @media (min-width: 1280px) {
   .page-accomodation {
     margin: 0;
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
   }
 }
 .page-accomodation__wrapper {
@@ -342,7 +327,6 @@
     padding: 36px 120px 104px;
     background-color: #ffffff;
     margin: 0;
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
   }
 }
 .footer__hashtag {
@@ -397,7 +381,6 @@
   }
   .attractions-sightseeing {
     margin: 0;
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
   }
 }
 .attractions-sightseeing__item {
@@ -448,7 +431,6 @@
   .video-presentation {
     margin: 0;
     padding-top: 100px;
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
   }
 }
 .video-presentation__notice {
@@ -467,9 +449,6 @@
   background-color: #ffffff;
 }
 @media (min-width: 768px) {
-  .feedback-form {
-    box-shadow: 6px 0 4px -4px #ffffff, -6px 0 4px -4px #ffffff;
-  }
   .feedback-form__form {
     display: grid;
     grid-template-columns: 280px 280px;
@@ -618,5 +597,13 @@
   margin-top: 34px;
   display: flex;
   list-style: none;
+}
+@media (min-width: 1280px) {
+  .page__body-container {
+    background-color: #e7e5e5;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-shadow: 40px 0 4px -4px #e7e5e5, -40px 0 4px -4px #e7e5e5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
