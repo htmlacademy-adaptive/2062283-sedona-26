@@ -1,5 +1,7 @@
 .main-header {
   display: flex;
+  min-height: 56px;
+  justify-content: space-around;
 }
 
 .main-header__logo {
@@ -12,6 +14,7 @@
     position: absolute;
     margin: 0;
     left: 291px;
+    z-index: 2;
   }
 
   .main-nav__toggle {
@@ -30,12 +33,8 @@
     display: none;
   }
 
-  .main-header {
-    width: auto;
-    justify-content: space-between;
-  }
-}
 
 .main-nav__toggle {
   margin-left: 25px;
+}
 }
