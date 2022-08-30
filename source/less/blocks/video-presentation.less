@@ -18,6 +18,14 @@
   margin-bottom: 38px;
 }
 
+.video-presentation__video {
+  width: 280px;
+  height: 177px;
+  background-image: url("../img/video-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 280px 177px;
+}
+
 @media (min-width: @tablet-width) {
   .video-presentation {
     padding-left: 40px;
@@ -30,9 +38,10 @@
   }
 
   .video-presentation__video {
-    background: url("../img/video-desktop.jpg") no-repeat center;
     width: 648px;
     height: 500px;
+    background-image: url("../img/video-tablet.jpg");
+    background-size: 648px 500px;
   }
 }
 
@@ -41,6 +50,13 @@
     margin: 0;
     padding-top: 100px;
   }
+
+  .video-presentation__video {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/video-tablet.jpg");
+    background-size: 800px 500px;
+}
 }
 
 .video-presentation__notice {

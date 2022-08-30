@@ -1,7 +1,27 @@
 .slogan {
-  background: url("../img/back-mobile.jpg") no-repeat center;
+  display: flex;
   height: 389px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 389px;
   background-color: #ffffff;
+  margin-top: -35px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+    background-size: 768px 518px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet-2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    background-size: 1200px 518px;
+    background-size: cover;
+
+}
 }
 
 .slogan__wrapper {
@@ -13,4 +33,10 @@
 
 .slogan__image {
   margin-top: 90px;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan__wrapper {
+    margin-top: 80px;
+  }
 }

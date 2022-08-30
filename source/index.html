@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
     <div class="page__body-container">
@@ -77,13 +78,24 @@
                     Седона не аттракцион для туристов, там течет своя жизнь
                   </p>
                 </div>
-                <img
-                  class="advanatages-catalog__picture"
-                  src="img/city.jpg"
-                  width="320"
-                  height="260"
-                  alt="Изображение города"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/city-desktop.jpg 1x, img/city-desktop-2x.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/city-tablet.jpg 1x, img/city-tablet-2x.jpg 2x"
+                  />
+                  <img
+                    class="advanatages-catalog__picture"
+                    src="img/city-mobile.jpg"
+                    width="320"
+                    height="260"
+                    srcset="img/city-mobile-2x.jpg"
+                    alt="Изображение города"
+                  />
+                </picture>
               </div>
               <ul class="advantages-catalog__list addition-list">
                 <li class="addition-list__item addition-list__item--housing">
@@ -121,13 +133,30 @@
                     Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
-                <img
-                  class="advanatages-catalog__picture"
-                  src="img/bridge.jpg"
-                  width="320"
-                  height="260"
-                  alt="Изображение моста"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      img/bridge-desktop.jpg    1x,
+                      img/bridge-desktop-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/bridge-tablet.jpg    1x,
+                      img/bridge-tablet-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="advanatages-catalog__picture"
+                    src="img/bridge-mobile.jpg"
+                    width="320"
+                    height="260"
+                    srcset="img/bridge-mobile-2x.jpg"
+                    alt="Изображение моста"
+                  />
+                </picture>
               </div>
             </li>
             <li
