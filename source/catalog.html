@@ -46,14 +46,12 @@
         <section class="slogan">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
           <div class="slogan__wrapper">
-            <div class="slogan__wrapper">
-              <img
-                src="img/sedona-title.svg"
-                width="282"
-                height="49"
-                alt="Великолепная Седона"
-              />
-            </div>
+            <img
+              src="img/sedona-title.svg"
+              width="282"
+              height="49"
+              alt="Великолепная Седона"
+            />
           </div>
         </section>
         <section class="page-about">
@@ -69,7 +67,7 @@
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item--road"
             >
-              <picture>
+              <picture class="attractions-sightseeing__image">
                 <source
                   media="(min-width: 1280px)"
                   srcset="img/road-desktop.jpg 1x, img/road-desktop-2x.jpg 2x"
@@ -79,7 +77,7 @@
                   srcset="img/road-tablet.jpg 1x, img/road-tablet-2x.jpg 2x"
                 />
                 <img
-                  class="attractions-sightseeing__picture--road"
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--road"
                   src="img/road-mobile.jpg"
                   width="280"
                   height="280"
@@ -87,8 +85,12 @@
                   alt="Изображение дороги"
                 />
               </picture>
-              <div class="attractions-sightseeing__container">
-                <div class="attractions-sightseeing__wrapper--description">
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--road"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
                   <span class="attractions-sightseeing__title"
                     >Неродные просторы</span
                   >
@@ -96,7 +98,9 @@
                     >Автор фото: Борис</span
                   >
                 </div>
-                <div class="attractions-sightseeing__wrapper--likes">
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
                   <span class="attractions-sightseeing__likes">1350</span>
                   <button class="attractions-sightseeing__thumb" type="button">
                     <span class="visually-hidden">Палец вверх</span>
@@ -107,7 +111,7 @@
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item--cactus"
             >
-              <picture>
+              <picture class="attractions-sightseeing__image">
                 <source
                   media="(min-width: 1280px)"
                   srcset="
@@ -117,10 +121,10 @@
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/cactus-tablet.jpg 1x, img/cactus-tablet-2x.jpg 2x"
+                  srcset="img/cactus-mobile.jpg 1x, img/cactus-mobile-2x.jpg 2x"
                 />
                 <img
-                  class="attractions-sightseeing__picture--cactus"
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--cactus"
                   src="img/cactus-mobile.jpg"
                   width="280"
                   height="280"
@@ -128,8 +132,12 @@
                   alt="Изображение кактуса"
                 />
               </picture>
-              <div class="attractions-sightseeing__container">
-                <div class="attractions-sightseeing__wrapper--description">
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--cactus"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
                   <span class="attractions-sightseeing__title"
                     >Местная растительность</span
                   >
@@ -137,7 +145,9 @@
                     >Автор фото: Сергей</span
                   >
                 </div>
-                <div class="attractions-sightseeing__wrapper--likes">
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
                   <span class="attractions-sightseeing__likes">143</span>
                   <button class="attractions-sightseeing__thumb" type="button">
                     <span class="visually-hidden">Палец вверх</span>
@@ -148,7 +158,7 @@
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item-serpentine"
             >
-              <picture>
+              <picture class="attractions-sightseeing__image">
                 <source
                   media="(min-width: 1280px)"
                   srcset="
@@ -164,16 +174,20 @@
                   "
                 />
                 <img
-                  class="attractions-sightseeing__picture--serpentine"
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
                   src="img/serpentine-mobile.jpg"
                   width="280"
                   height="280"
-                  srcset="img/serpentine-mobile-2x.jpg"
-                  alt="Изображение серпантина"
+                  srcset="img/serpentine-mobile.jpg"
+                  alt="Изображение моста"
                 />
               </picture>
-              <div class="attractions-sightseeing__container">
-                <div class="attractions-sightseeing__wrapper--description">
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--serpentine"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
                   <span class="attractions-sightseeing__title"
                     >Дорога на север</span
                   >
@@ -181,7 +195,9 @@
                     >Автор фото: Петр</span
                   >
                 </div>
-                <div class="attractions-sightseeing__wrapper--likes">
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
                   <span class="attractions-sightseeing__likes">96</span>
                   <button class="attractions-sightseeing__thumb" type="button">
                     <span class="visually-hidden">Палец вверх</span>
@@ -192,7 +208,7 @@
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item--bridge"
             >
-              <picture>
+              <picture class="attractions-sightseeing__image">
                 <source
                   media="(min-width: 1280px)"
                   srcset="
@@ -208,16 +224,20 @@
                   "
                 />
                 <img
-                  class="attractions-sightseeing__picture--bridge"
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
                   src="img/catalog-bridge-mobile.jpg"
                   width="280"
                   height="280"
-                  srcset="img/catalog-bridge-2x.jpg"
-                  alt="Изображение кактуса"
+                  srcset="img/catalog-bridge-mobile.jpg"
+                  alt="Изображение моста"
                 />
               </picture>
-              <div class="attractions-sightseeing__container">
-                <div class="attractions-sightseeing__wrapper--description">
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--bridge"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
                   <span class="attractions-sightseeing__title"
                     >Мост дъявола</span
                   >
@@ -225,7 +245,9 @@
                     >Автор фото: Антон</span
                   >
                 </div>
-                <div class="attractions-sightseeing__wrapper--likes">
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
                   <span class="attractions-sightseeing__likes">254</span>
                   <button class="attractions-sightseeing__thumb" type="button">
                     <span class="visually-hidden">Палец вверх</span>
@@ -251,9 +273,9 @@
       </main>
       <footer class="footer">
         <b class="footer__hashtag">#Visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="vk-icon"
                 aria-hidden="true"
@@ -281,8 +303,8 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"
@@ -301,8 +323,8 @@
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"

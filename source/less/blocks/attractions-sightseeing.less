@@ -3,6 +3,9 @@
 }
 
 .attractions-sightseeing__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -15,31 +18,22 @@
   flex-direction: column;
 }
 
-.attractions-sightseeing__item--road {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
+.attractions-sightseeing__image {
+  font-size: 0;
 }
 
-.attractions-sightseeing__item--cactus {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
+.attractions-sightseeing__picture {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
-.attractions-sightseeing__item-serpentine {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
-}
-
 
 .attractions-sightseeing__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;t
-  margin-right: 100px;
+  text-transform: uppercase;
+  margin-right: 40px;
 }
 
 .attractions-sightseeing__author {
@@ -71,15 +65,13 @@
   display: flex;
   width: 23px;
   height: 21px;
-  background-image: url(../img/like-icon.svg.svg);
+  background-image: url("../img/like-icon.svg.svg");
   background-repeat: no-repeat;
   background-position: left;
   border: none;
   outline: none;
-  background-color: #ffffff;
+  background-color: transparent;
 }
-
-
 
 @media (min-width: @tablet-width) {
   .attractions-sightseeing {
@@ -90,20 +82,27 @@
   .attractions-sightseeing__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 0;
     width: 100%;
     padding: 0;
   }
 
+  .attractions-sightseeing__item:first-child {
+    width: 100%;
+  }
+
+  .attractions-sightseeing__item:not(:first-child) {
+    width: 50%;
+  }
+
   .attractions-sightseeing__picture--road {
-    width: 645px;
+    height: 400px;
   }
 
-  .attractions-sightseeing__picture--cactus {
-    width: 324px;
-  }
-
-  .attractions-sightseeing__picture--serpentine {
-    width: 324px;
+  .attractions-sightseeing__picture--cactus,
+  .attractions-sightseeing__picture--bridge {
+    height: 267px;
   }
 
   .attractions-sightseeing__container {
@@ -132,12 +131,12 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .attractions-sightseeing {
     padding: 0;
   }
 
   .attractions-sightseeing__list {
+    position: relative;
     padding: 0;
     width: 100%;
   }
@@ -148,33 +147,43 @@
     margin: 0;
   }
 
-  .attractions-sightseeing__picture--road {
-    min-width: 1200px;
-    width: 100%;
+  .attractions-sightseeing__item:not(:first-child) {
+    width: 33%;
   }
 
-  .attractions-sightseeing__item--cactus {
-    width: 425px;
+  .attractions-sightseeing__container--road {
+    position: absolute;
+    width: 1240px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 317px;
   }
 
-  .attractions-sightseeing__picture--cactus {
-    width: 425px;
+  .attractions-sightseeing__container--cactus {
+    position: absolute;
+    width: 385px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 588px;
   }
 
-  .attractions-sightseeing__item--serpentine {
-    width: 425px;
+  .attractions-sightseeing__container--serpentine {
+    position: absolute;
+    width: 385px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 588px;
   }
 
-  .attractions-sightseeing__picture--serpentine {
-    width: 425px;
+  .attractions-sightseeing__container--bridge {
+    position: absolute;
+    width: 385px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 588px;
   }
 
-  .attractions-sightseeing__item--bridge {
-    width: 425px;
+  .attractions-sightseeing__title,
+  .attractions-sightseeing__author,
+  .attractions-sightseeing__likes {
+    color: #ffffff;
   }
 
-  .attractions-sightseeing__picture--bridge {
-    width: 425px;
-  }
 }
 

@@ -70,8 +70,10 @@
             <li
               class="advantages-catalog__item advantages-catalog__item--colored"
             >
-              <div class="advantages-catalog__item--colored-container">
-                <div class="advantages-catalog__item--colored-wrapper">
+              <div class="advantages-catalog__item-container">
+                <div
+                  class="advantages-catalog__item-wrapper advantages-catalog__item-wrapper-colored"
+                >
                   <h3 class="advantages-catalog__title">Настоящий городок</h3>
                   <p class="advantages-catalog__number">-№1-</p>
                   <p class="advantages-catalog__description">
@@ -88,7 +90,7 @@
                     srcset="img/city-tablet.jpg 1x, img/city-tablet-2x.jpg 2x"
                   />
                   <img
-                    class="advanatages-catalog__picture"
+                    class="advantages-catalog__picture"
                     src="img/city-mobile.jpg"
                     width="320"
                     height="260"
@@ -121,9 +123,9 @@
             <li
               class="advantages-catalog__item advantages-catalog__item--colored"
             >
-              <div class="advantages-catalog__item--colored-container">
+              <div class="advantages-catalog__item-container">
                 <div
-                  class="advantages-catalog__item--colored-wrapper advantages-catalog__item--colored-wrapper-swap"
+                  class="advantages-catalog__item-wrapper advantages-catalog__item-wrapper-colored"
                 >
                   <h3 class="advantages-catalog__title">
                     Там есть мост дъявола
@@ -149,7 +151,7 @@
                     "
                   />
                   <img
-                    class="advanatages-catalog__picture"
+                    class="advantages-catalog__picture"
                     src="img/bridge-mobile.jpg"
                     width="320"
                     height="260"
@@ -202,21 +204,32 @@
           </p>
           <a class="page-accomodation__link" href="#"> Найти гостиницу </a>
           <div class="page-accomodation__map">
-            <iframe
-              src="https://www.google.ru/maps/place/Flagstaff+Pulliam+Airport,+6200+S+Pulliam+Dr,+Flagstaff,+AZ+86005,+United+States/@35.1274553,-111.651999,13z/data=!4m12!1m6!3m5!1s0x872d8ef7da2e2631:0x8e1f3ca1cedbb300!2sFlagstaff,+AZ,+USA!8m2!3d35.1982836!4d-111.651302!3m4!1s0x872d855990476bff:0x94b3a664bc5a4cd5!8m2!3d35.1402957!4d-111.6710476"
-              width="320"
-              height="350"
-              allowfullscreen
-              title="Адрес Седоны"
-            ></iframe>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/map-tablet.jpg 1x, img/map-tablet-2x.jpg 2x"
+              />
+              <img
+                class="page-accomodation__map-picture"
+                src="img/map-mobile.jpg"
+                width="320"
+                height="350"
+                srcset="img/map-mobile.jpg"
+                alt="Карта Седоны"
+              />
+            </picture>
           </div>
         </section>
       </main>
       <footer class="footer">
         <b class="footer__hashtag">#Visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="vk-icon"
                 aria-hidden="true"
@@ -244,8 +257,8 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"
@@ -264,8 +277,8 @@
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"
