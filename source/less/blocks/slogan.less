@@ -2,37 +2,50 @@
   position: relative;
   display: flex;
   height: 389px;
-  background: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 389px;
-  background-color: #ffffff;
+
 
   @media (min-width: @mobile-width) {
-    background: url("../img/back-mobile.jpg");
+    background-image: url("../img/triangle-left.svg"), url("../img/triangle-right.svg"), url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 160px 57px 160px 57px 100%;
+    background-position: left bottom, right bottom, center;
+    background-color: #ffffff;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-mobile-2x.jpg");
+      background-image: url("../img/triangle-left.svg"), url("../img/triangle-right.svg"), url("../img/back-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: 384px 57px 384px 57px 100%;
+      background-position: left bottom, right bottom, center;
+    }
   }
-}
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/back-tablet.jpg");
-    background-size: 768px 518px;
+    background-image: url("../img/triangle-tablet-left.svg"), url("../img/triangle-tablet-right.svg"), url("../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 384px 60px 384px 60px 100%;
+    background-position: left bottom, right bottom, center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet-2x.jpg");
+      background-image: url("../img/triangle-tablet-left.svg"), url("../img/triangle-tablet-right.svg"), url("../img/back-tablet-2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 384px 57px 384px 57px 100%;
+      background-position: left bottom, right bottom, center;
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/back-desktop.jpg");
-    background-size: cover;
+    background-image: url("../img/triangle-desktop-left.svg"), url("../img/triangle-desktop-right.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 58px 600px 58px 100%;
+    background-position: left bottom, right bottom, cover;
 
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-desktop-2x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle-desktop-left.svg"), url("../img/triangle-desktop-right.svg"), url("../img/back-desktop-2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 600px 58px 600px 58px 100%;
+      background-position: left bottom, right bottom, cover;
+    }
   }
-}
 }
 
 .slogan__wrapper {

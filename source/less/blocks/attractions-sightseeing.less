@@ -14,6 +14,7 @@
 }
 
 .attractions-sightseeing__item {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -106,13 +107,17 @@
   }
 
   .attractions-sightseeing__container {
+    position: absolute;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    background-color: #f2f2f2;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 22px;
-    padding-bottom: 15px;
-    background-color: #f2f2f2;
+    padding-bottom: 16px;
+    top: calc(100% - 80px);
+    width: 100%;
   }
 
   .attractions-sightseeing__wrapper--description {
@@ -135,8 +140,11 @@
     padding: 0;
   }
 
+  .attractions-sightseeing__container {
+    background-color: transparent;
+  }
+
   .attractions-sightseeing__list {
-    position: relative;
     padding: 0;
     width: 100%;
   }
@@ -148,35 +156,7 @@
   }
 
   .attractions-sightseeing__item:not(:first-child) {
-    width: 33%;
-  }
-
-  .attractions-sightseeing__container--road {
-    position: absolute;
-    width: 1240px;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 317px;
-  }
-
-  .attractions-sightseeing__container--cactus {
-    position: absolute;
-    width: 385px;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 588px;
-  }
-
-  .attractions-sightseeing__container--serpentine {
-    position: absolute;
-    width: 385px;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 588px;
-  }
-
-  .attractions-sightseeing__container--bridge {
-    position: absolute;
-    width: 385px;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 588px;
+    width: 33.33%;
   }
 
   .attractions-sightseeing__title,
@@ -184,8 +164,9 @@
   .attractions-sightseeing__likes {
     color: #ffffff;
   }
+
   .attractions-sightseeing__thumb {
     background-image: url("../img/like-icon-desktop.svg");
     background-color: transparent;
-}
+  }
 }

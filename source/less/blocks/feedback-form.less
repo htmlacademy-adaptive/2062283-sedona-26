@@ -12,11 +12,89 @@
 
 .feedback-form__input {
   display: flex;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.feedback-form__input-custom {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.feedback-form__input-custom::before {
+  position: absolute;
+  content: "";
+  display: none;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:checked + .feedback-form__input-custom::before {
+  display: block;
+}
+
+.feedback-form__input-checkbox {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.feedback-form__input-checkbox::before {
+  content: "";
+  display: none;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked + .feedback-form__input-checkbox::before {
+  display: block;
 }
 
 .feedback-form__title {
   text-align: center;
   margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 input[type="text"] {
@@ -40,7 +118,6 @@ input[type="text"] {
 
   .feedback-form__fieldset--rating {
     grid-column: 1 / span 2;
-
   }
 
   .feedback-form__fieldset--attractions {
@@ -55,6 +132,7 @@ input[type="text"] {
     display: grid;
     grid-template-columns: 280px 280px;
     grid-template-rows: 46px 46px;
+    grid-row-gap: 16px;
   }
 
   .feedback-form__attractions-list {
@@ -63,6 +141,7 @@ input[type="text"] {
     grid-template-rows: 46px 46px;
     margin: 0;
     justify-content: center;
+    grid-row-gap: 16px;
   }
 
   .feedback-form__textarea {
@@ -94,6 +173,7 @@ input[type="text"] {
   .feedback-form__title {
     margin-bottom: 55px;
   }
+
   .feedback-form__rating-list,
   .feedback-form__attractions-list {
     display: flex;
@@ -103,6 +183,10 @@ input[type="text"] {
 
   .feedback-form__fieldset--review {
     margin-left: 50px;
+  }
+
+  .feedback-form__fieldset--rating {
+    margin-top: 100px;
   }
 
   .feedback-form__button {
@@ -124,18 +208,14 @@ input[type="text"] {
   }
 }
 
-.feedback-form__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .feedback-form__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .feedback-form__label--colored {
@@ -145,10 +225,6 @@ input[type="text"] {
 .feedback-form__rating-item {
   display: flex;
   align-items: center;
-}
-
-input[type="radio"] {
-  width: 46px;
 }
 
 .feedback-form__rating-item > .feedback-form__label {
@@ -174,21 +250,8 @@ input[type="checkbox"] {
   text-transform: none;
 }
 
-.feedback-form__input {
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-  font-family: "PT Sans", sans-serif;
-  color: #000000;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  width: 100%;
-}
-
 .feedback-form__input--phone {
-  background-image: url(../img/phone.svg);
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: right;
   width: 259px;
@@ -197,7 +260,7 @@ input[type="checkbox"] {
 }
 
 .feedback-form__input--email {
-  background-image: url(../img/email.svg);
+  background-image: url("../img/email.svg");
   background-repeat: no-repeat;
   background-position: right;
   width: 259px;
@@ -218,7 +281,7 @@ input[type="checkbox"] {
   resize: none;
   padding: 16px;
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
 }
 
 .feedback-form__input::placeholder {
@@ -239,7 +302,6 @@ input[type="checkbox"] {
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
-
 }
 
 .feedback-form__rating-list {
