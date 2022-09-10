@@ -19,7 +19,7 @@
             alt="Седона. Поиск гостиниц"
           />
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -46,12 +46,24 @@
         <section class="slogan">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
           <div class="slogan__wrapper">
-            <img
-              src="img/sedona-title.svg"
-              width="282"
-              height="49"
-              alt="Великолепная Седона"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/sedona-title-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/sedona-title-desktop.svg"
+              />
+              <img
+                src="img/sedona-title.svg"
+                width="282"
+                height="49"
+                alt="Великолепная Седона"
+              />
+            </picture>
+            <span class="slogan_decoration-left"></span>
+            <span class="slogan_decoration-right"></span>
           </div>
         </section>
         <section class="page-about">
@@ -178,7 +190,7 @@
                   src="img/serpentine-mobile.jpg"
                   width="280"
                   height="280"
-                  srcset="img/serpentine-mobile.jpg"
+                  srcset="img/serpentine-mobile-2x.jpg"
                   alt="Изображение моста"
                 />
               </picture>
@@ -228,7 +240,7 @@
                   src="img/catalog-bridge-mobile.jpg"
                   width="280"
                   height="280"
-                  srcset="img/catalog-bridge-mobile.jpg"
+                  srcset="img/catalog-bridge-mobile-2x.jpg"
                   alt="Изображение моста"
                 />
               </picture>
@@ -272,7 +284,7 @@
         </section>
       </main>
       <footer class="footer">
-        <b class="footer__hashtag">#Visitsedona</b>
+        <span class="footer__hashtag">#Visitsedona</span>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">

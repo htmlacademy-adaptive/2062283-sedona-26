@@ -46,13 +46,24 @@
         <section class="slogan">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
           <div class="slogan__wrapper">
-            <img
-              class="slogan__image"
-              src="img/sedona-text.svg"
-              width="282"
-              height="214"
-              alt="Великолепная Седона"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/sedona-text-tablet.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/sedona-text-tablet.svg"
+              />
+              <img
+                src="img/sedona-text.svg"
+                width="282"
+                height="214"
+                alt="Великолепная Седона"
+              />
+            </picture>
+            <span class="slogan_decoration-left"></span>
+            <span class="slogan_decoration-right"></span>
           </div>
         </section>
         <section class="page-about">
@@ -128,7 +139,7 @@
                   class="advantages-catalog__item-wrapper advantages-catalog__item-wrapper-colored"
                 >
                   <h3 class="advantages-catalog__title">
-                    Там есть мост дъявола
+                    Там есть мост дьявола
                   </h3>
                   <p class="advantages-catalog__number">-№2-</p>
                   <p class="advantages-catalog__description">
@@ -226,7 +237,7 @@
         </section>
       </main>
       <footer class="footer">
-        <b class="footer__hashtag">#Visitsedona</b>
+        <span class="footer__hashtag">#Visitsedona</span>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
