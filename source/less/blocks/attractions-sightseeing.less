@@ -140,10 +140,6 @@
     padding: 0;
   }
 
-  .attractions-sightseeing__container {
-    background-color: transparent;
-  }
-
   .attractions-sightseeing__list {
     padding: 0;
     width: 100%;
@@ -157,6 +153,14 @@
 
   .attractions-sightseeing__item:not(:first-child) {
     width: 33.33%;
+  }
+
+  .attractions-sightseeing__container {
+    position: absolute;
+    width: 100%;
+    top: calc(100% - 80px);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .attractions-sightseeing__title,
