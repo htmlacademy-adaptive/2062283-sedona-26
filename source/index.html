@@ -75,14 +75,9 @@
         </section>
         <section class="advantages-catalog">
           <h2 class="visually-hidden">Список преимуществ</h2>
-          <ol class="advantages-catalog__list">
-            <li
-              class="advantages-catalog__item advantages-catalog__item--colored"
-            >
-              <div class="advantages-catalog__item-container">
                 <div
-                  class="advantages-catalog__item-wrapper advantages-catalog__item-wrapper-colored"
-                >
+                  class="advantages-catalog__item-container">
+                  <div class="advantages-catalog__item-wrapper">
                   <h3 class="advantages-catalog__title">Настоящий городок</h3>
                   <p class="advantages-catalog__number">-№1-</p>
                   <p class="advantages-catalog__description">
@@ -129,22 +124,8 @@
                 </li>
               </ul>
             </li>
-            <li
-              class="advantages-catalog__item advantages-catalog__item--colored"
-            >
               <div class="advantages-catalog__item-container">
-                <div
-                  class="advantages-catalog__item-wrapper advantages-catalog__item-wrapper-colored"
-                >
-                  <h3 class="advantages-catalog__title">
-                    Там есть мост дьявола
-                  </h3>
-                  <p class="advantages-catalog__number">-№2-</p>
-                  <p class="advantages-catalog__description">
-                    Да, по нему можно пройти! Если вы осмелитесь, конечно
-                  </p>
-                </div>
-                <picture>
+                <picture class="advantages-catalog__background">
                   <source
                     media="(min-width: 1280px)"
                     srcset="
@@ -168,37 +149,46 @@
                     alt="Изображение моста"
                   />
                 </picture>
+                <div class="advantages-catalog__item-wrapper">
+                  <h3 class="advantages-catalog__title">
+                    Там есть мост дьявола
+                  </h3>
+                  <p class="advantages-catalog__number">-№2-</p>
+                  <p class="advantages-catalog__description">
+                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                  </p>
+                </div>
               </div>
-            </li>
-            <li
-              class="advantages-catalog__item advantages-catalog__item--secondary"
+            <ol
+              class="addition-catalog__list"
             >
-              <h3 class="advantages-catalog__title">Небольшая площадь</h3>
-              <p class="advantages-catalog__number">-№3-</p>
+            <li class="addition-catalog__item addition-catalog__item--square">
+              <h3 class="addition-catalog__title">Небольшая площадь</h3>
+              <p class="addition-catalog__number">-№3-</p>
               <p
-                class="advantages-catalog__description advantages-catalog__description--secondary"
+                class="addition-catalog__description"
               >
                 Все интересные места находятся очень близко
               </p>
             </li>
             <li
-              class="advantages-catalog__item advantages-catalog__item--secondary"
+              class="addition-catalog__item addition-catalog__item--road"
             >
-              <h3 class="advantages-catalog__title">Красивая дорога</h3>
-              <p class="advantages-catalog__number">-№4-</p>
+              <h3 class="addition-catalog__title">Красивая дорога</h3>
+              <p class="addition-catalog__number">-№4-</p>
               <p
-                class="advantages-catalog__description advantages-catalog__description--secondary"
+                class="addition-catalog__description"
               >
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li
-              class="advantages-catalog__item advantages-catalog__item--secondary"
+              class="addition-catalog__item"
             >
-              <h3 class="advantages-catalog__title">Мало туристов</h3>
-              <p class="advantages-catalog__number">-№5-</p>
+              <h3 class="addition-catalog__title">Мало туристов</h3>
+              <p class="addition-catalog__number">-№5-</p>
               <p
-                class="advantages-catalog__description advantages-catalog__description--secondary"
+                class="addition-catalog__description"
               >
                 Большинство едет в Гранд Каньон и толпится там
               </p>
