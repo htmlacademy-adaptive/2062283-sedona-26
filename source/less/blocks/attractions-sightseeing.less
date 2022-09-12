@@ -17,10 +17,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.attractions-sightseeing__item::before {
+  position: absolute;
+  content: "";
+  background: url("../img/line.svg") no-repeat;
+  width: 320px;
+  height: 1px;
+  background-color: #d6d6d6;
+  left: -20px;
+  bottom: -25px;
 }
 
 .attractions-sightseeing__image {
-  font-size: 0;
+  margin-bottom: 15px;
 }
 
 .attractions-sightseeing__picture {
@@ -42,6 +54,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin-bottom: 16px;
 }
 
 .attractions-sightseeing__likes {
@@ -78,6 +91,18 @@
   .attractions-sightseeing {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .attractions-sightseeing__item {
+    margin-bottom: 0;
+  }
+
+  .attractions-sightseeing__item--bridge {
+    margin-top: 16px;
+  }
+
+  .attractions-sightseeing__item::before {
+    display: none;
   }
 
   .attractions-sightseeing__list {
@@ -140,6 +165,14 @@
     padding: 0;
   }
 
+  .attractions-sightseeing__item {
+    margin-bottom: 0;
+  }
+
+  .attractions-sightseeing__image {
+    margin-bottom: -20px;
+  }
+
   .attractions-sightseeing__list {
     padding: 0;
     width: 100%;
@@ -149,6 +182,11 @@
     min-width: 1200px;
     width: 100%;
     margin: 0;
+  }
+
+  .attractions-sightseeing__picture--cactus,
+  .attractions-sightseeing__picture--serpentine {
+    margin-top: 16px;
   }
 
   .attractions-sightseeing__item:not(:first-child) {
@@ -161,6 +199,7 @@
     top: calc(100% - 80px);
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
   }
 
   .attractions-sightseeing__title,

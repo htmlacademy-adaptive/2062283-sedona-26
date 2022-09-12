@@ -1,5 +1,4 @@
 .video-presentation {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,20 +21,24 @@
   text-transform: uppercase;
 }
 
+.video-presentation__video {
+  position: relative;
+}
+
 .video-presentation__button {
   position: absolute;
   display: flex;
   background-image: url("../img/play.svg");
   background-repeat: no-repeat;
-  background-position: center;
   background-color: transparent;
   width: 48px;
   height: 54px;
   border: none;
   outline: none;
   padding: 0;
-  left: 134px;
-  bottom: 58px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: @mobile-width) {
@@ -92,21 +95,11 @@
     width: 500px;
     text-align: center;
   }
-
-  .video-presentation__button {
-    left: 390px;
-    bottom: 222px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .video-presentation {
     margin: 0;
     padding-top: 100px;
-  }
-
-  .video-presentation__button {
-    left: 612px;
-    bottom: 340px;
   }
 }
