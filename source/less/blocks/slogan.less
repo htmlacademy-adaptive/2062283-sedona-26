@@ -1,26 +1,25 @@
 .slogan {
   position: relative;
   display: flex;
-  height: 389px;
+  min-height: 389px;
+  background-image: url("../img/triangle-left.svg"), url("../img/triangle-right.svg"), url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 160px 57px, 160px 57px, cover;
+  background-position: left bottom, right bottom, center;
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 8, 100% 93.31%, 50% 100%, 93.31%);
 
-
-  @media (min-width: @mobile-width) {
-    background-image: url("../img/triangle-left.svg"), url("../img/triangle-right.svg"), url("../img/back-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 160px 57px, 160px 57px, cover;
-    background-position: left bottom, right bottom, center;
-    background-color: #ffffff;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/triangle-left.svg"), url("../img/triangle-right.svg"), url("../img/back-mobile.jpg");
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/triangle-left.svg"), url("../img/triangle-right.svg"), url("../img/back-mobile-2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
+    min-height: 518px;
     background-image: url("../img/triangle-tablet-left.svg"), url("../img/triangle-tablet-right.svg"), url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
     background-size: 384px 57px, 384px 57px, cover;
     background-position: left bottom, right bottom, center;
+    clip-path: polygon(0 8, 100% 8, 100% 93.05%, 95.57% 93.62%, 95.57% 88.99%, 50% 100%, 4.42% 88.99%, 4.42% 93.62%, 0 93.05%);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/triangle-tablet-left.svg"), url("../img/triangle-tablet-right.svg"), url("../img/back-tablet-2x.jpg");
@@ -32,6 +31,7 @@
     background-repeat: no-repeat;
     background-size: 600px 57px, 600px 57px, cover;
     background-position: left bottom, right bottom, center;
+    clip-path: polygon(0 0, 100% 8, 100% 88.99%, 79.16% 95.62%, 79.16% 88.99%, 50% 100%, 20.83% 88.99%, 20.83% 93.62%, 0 88.99%);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/triangle-desktop-left.svg"), url("../img/triangle-desktop-right.svg"), url("../img/back-desktop-2x.jpg");
@@ -41,48 +41,42 @@
 
 .slogan-catalog,
 .slogan-form {
-  height: 214px;
+  min-height: 158px;
+  clip-path: polygon(0 0, 100% 8, 100% 83.54%, 50% 100%, 0 83.54%);
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    clip-path: polygon(0 0, 108% 8, 100% 87.58%, 95.57% 88.62%, 95.57% 80.34%, 50% 100%, 4.42% 80.34%, 4.42% 88.62%, 0 87.58%);
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 301px;
+    clip-path: polygon(0 0, 100% 8, 100% 81.06%, 79.16% 89.03%, 79.16% 81.06%, 50% 100%, 20.83% 81.06%, 20.83% 89.03%, 0 81.06%);
+  }
 }
 
 .slogan__wrapper {
   display: flex;
-  margin: 0 auto;
-  margin-top: 75px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-@media (min-width: @tablet-width) {
-  .slogan {
-    height: 518px;
-  }
-
-  .slogan__picture {
+.slogan__picture {
+  @media (min-width: @tablet-width) {
     width: 461px;
     height: 350px;
   }
+}
 
-  .slogan__wrapper {
-    margin-top: 77px;
-  }
-
-  .slogan__wrapper-text {
+.slogan__wrapper-text {
+  @media (min-width: @tablet-width) {
     width: 457px;
     height: 78px;
   }
 
-  .slogan-catalog,
-  .slogan-form {
-    height: 270px;
-    justify-content: center;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .slogan-catalog {
-    height: 270px;
-  }
-
-  .slogan__wrapper-text {
-    width: 459px;
-    height: 80px;
+  @media (min-width: @desktop-width) {
+    width: 460px;
+    height: 88px;
   }
 }
