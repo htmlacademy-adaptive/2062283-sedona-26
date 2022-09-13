@@ -39,71 +39,50 @@
   }
 }
 
-.slogan-catalog {
+.slogan-catalog,
+.slogan-form {
   height: 214px;
 }
 
 .slogan__wrapper {
   display: flex;
-  width: 282px;
   margin: 0 auto;
   margin-top: 75px;
 }
 
 @media (min-width: @tablet-width) {
+  .slogan {
+    height: 518px;
+  }
+
+  .slogan__picture {
+    width: 461px;
+    height: 350px;
+  }
+
   .slogan__wrapper {
-    margin-top: 80px;
+    margin-top: 77px;
   }
 
-  .slogan-catalog {
+  .slogan__wrapper-text {
+    width: 457px;
+    height: 78px;
+  }
+
+  .slogan-catalog,
+  .slogan-form {
     height: 270px;
-  }
-}
-
-.slogan_decoration-left {
-  position: absolute;
-  left: 0;
-  top: 332px;
-  width: 160px;
-  height: 57px;
-  content: "";
-  background: url("../img/triangle-left.svg") no-repeat;
-}
-
-.slogan_decoration-right {
-  position: absolute;
-  left: 160px;
-  top: 332px;
-  width: 160px;
-  height: 57px;
-  content: "";
-  background: url("../img/triangle-right.svg") no-repeat;
-}
-
-@media (min-width: @tablet-width) {
-  .slogan_decoration-left {
-    position: absolute;
-    left: 0;
-    top: 333px;
-    width: 380px;
-    height: 57px;
-    content: "";
-    background: url("../img/triangle-tablet-left.svg") no-repeat;
-  }
-
-  .slogan_decoration-right {
-    position: absolute;
-    left: 388px;
-    top: 333px;
-    width: 380px;
-    height: 57px;
-    content: "";
-    background: url("../img/triangle-tablet-right.svg") no-repeat;
+    justify-content: center;
   }
 }
 
 @media (min-width: @desktop-width) {
   .slogan-catalog {
     height: 270px;
+  }
+
+  .slogan__wrapper-text {
+    width: 459px;
+    height: 80px;
   }
 }

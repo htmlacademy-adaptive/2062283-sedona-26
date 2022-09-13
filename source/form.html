@@ -26,7 +26,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__list-item main-nav__list-item--main">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
               </li>
               <li class="main-nav__list-item main-nav__list-item--photo">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -43,25 +43,13 @@
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <section class="slogan">
+        <section class="slogan slogan-form">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
           <div class="slogan__wrapper">
             <picture>
-              <source
-                media="(min-width: 1200px)"
-                srcset="img/sedona-title-desktop.svg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/sedona-title-desktop.svg"
-              />
-              <img
-                src="img/sedona-title.svg"
-                width="282"
-                height="49"
-                alt="Великолепная Седона"
-              />
-            </picture>
+              <source media="(min-width: 1200px)" srcset="../img/sedona-title-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/sedona-title-desktop.svg">
+              <img class="slogan__wrapper-text" src="img/sedona-title.svg" width="229" height="39" alt="Великолепная Седона">
           </div>
         </section>
         <section class="page-about">
@@ -83,15 +71,15 @@
               <label class="feedback-form__label feedback-form__label--colored"
                 >Имя*</label
               >
-              <input class="feedback-form__input" type="text" required />
+              <input class="feedback-form__input" type="text" required placeholder="Имя" />
               <label class="feedback-form__label feedback-form__label--colored"
                 >Фамилия*</label
               >
-              <input class="feedback-form__input" type="text" required />
+              <input class="feedback-form__input" type="text" required placeholder="Фамилия" />
               <label class="feedback-form__label feedback-form__label--colored"
                 >Отчество</label
               >
-              <input class="feedback-form__input" type="text" />
+              <input class="feedback-form__input" type="text" placeholder="Отчество"/>
             </fieldset>
             <fieldset class="feedback-form__fieldset">
               <legend class="feedback-form__title">

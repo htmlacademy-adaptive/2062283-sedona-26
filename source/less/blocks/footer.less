@@ -1,21 +1,21 @@
 .footer {
-  position: relative;
   padding-top: 39px;
   padding-bottom: 29px;
-  text-align: center;
+  align-items: center;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .footer__copyright {
+  position: relative;
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #000000;
-  height: 45px;
+  color: rgba(0, 0, 0, 1);
 
   &:hover {
     color: rgba(129, 179, 210, 1);
@@ -25,8 +25,8 @@
 .footer__copyright::before {
   position: absolute;
   content: "";
-  right: 65px;
-  bottom: 45px;
+  right: -40px;
+  bottom: -7px;
   width: 27px;
   height: 34px;
   background-image: url("../img/htmlacademy.svg");
@@ -41,7 +41,8 @@
     padding-left: 60px;
     padding-right: 95px;
     padding-bottom: 36px;
-    align-items: baseline;
+    align-items: center;
+    gap: 0;
   }
 
   .footer__copyright {
@@ -49,27 +50,25 @@
   }
 
   .footer__copyright::before {
-    right: 49px;
-    bottom: 81px;
+    right: -36px;
+    bottom: -7px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     padding-top: 36px;
     background-color: #ffffff;
     margin: 0;
     height: 48px;
-    padding-left: 104px;
-    padding-right: 104px;
   }
 
   .footer__copyright::before {
-    right: 55px;
-    bottom: 35px;
+    right: -45px;
+    bottom: -7px;
   }
 }
 
@@ -79,5 +78,4 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 34px;
 }
