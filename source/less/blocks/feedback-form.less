@@ -10,6 +10,11 @@
   padding-right: 20px;
 }
 
+.feedback-form__attractions-list {
+  list-style: none;
+  padding: 0;
+}
+
 .feedback-form__input {
   display: flex;
   background-color: #f2f2f2;
@@ -154,11 +159,17 @@ input[type="text"] {
   }
 
   .feedback-form__form {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 88px;
   }
+
+  .feedback-form__contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
 
   .feedback-form__fieldset {
     width: 42%;
@@ -168,25 +179,43 @@ input[type="text"] {
     width: 100%;
   }
 
+  .feedback-form__fieldset--rating {
+    display: flex;
+    width: 100%;
+  }
+
   .feedback-form__rating-list {
-    display: grid;
-    grid-template-columns: 280px 280px;
-    grid-template-rows: 46px 46px;
-    grid-row-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+  }
+
+  .feedback-form__rating-item:first-child {
+    margin-right: 49px;
   }
 
   .feedback-form__attractions-list {
-    display: grid;
-    grid-template-columns: 280px 280px;
-    grid-template-rows: 46px 46px;
-    margin: 0;
-    justify-content: end;
-    grid-row-gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 74%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .feedback-form__attractions-item:nth-child(2) {
+    margin-right: 14px;
   }
 
   .feedback-form__textarea {
     width: 648px;
     margin: 0;
+  }
+
+  .feedback-form__review {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
   .feedback-form__button {
@@ -199,6 +228,7 @@ input[type="text"] {
 
   .feedback-form__required {
     width: 24%;
+    justify-content: flex-start;
   }
 }
 
@@ -214,6 +244,7 @@ input[type="text"] {
     grid-column-gap: 128px;
   }
 
+
   .feedback-form__title {
     margin-bottom: 55px;
   }
@@ -221,12 +252,19 @@ input[type="text"] {
   .feedback-form__rating-list,
   .feedback-form__attractions-list {
     display: flex;
-    justify-content: center;
-    margin: 0;
+    justify-content: space-between;
   }
 
   .feedback-form__fieldset--rating {
     display: flex;
+    width: 100%;
+  }
+
+  .feedback-form__fieldset--review {
+    margin: 0 auto;
+  }
+
+  .feedback-form__review {
     width: 100%;
   }
 
@@ -243,16 +281,18 @@ input[type="text"] {
 
 
   .feedback-form__rating-list {
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
   }
 
   .feedback-form__attractions-list {
     justify-content: space-between;
+    width: 100%;
   }
 
   .feedback-form__textarea {
     width: 768px;
+    margin-bottom: 48px;
   }
 }
 
@@ -265,6 +305,7 @@ input[type="text"] {
   align-items: center;
   margin-bottom: 10px;
 }
+
 
 .feedback-form__label--colored {
   color: #333333;
@@ -340,7 +381,4 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-.feedback-form__attractions-list {
-  list-style: none;
-  padding: 0;
-}
+
