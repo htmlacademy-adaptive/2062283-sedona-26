@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
     <div class="page__body-container">
@@ -25,7 +26,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__list-item main-nav__list-item--main">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
               </li>
               <li class="main-nav__list-item main-nav__list-item--photo">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -45,45 +46,63 @@
         <section class="slogan">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
           <div class="slogan__wrapper">
-            <img
-              class="slogan__image"
-              src="img/sedona-text.svg"
-              width="282"
-              height="214"
-              alt="Великолепная Седона"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/sedona-text-tablet.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/sedona-text-tablet.svg"
+              />
+              <img
+                class="slogan__picture"
+                src="img/sedona-text.svg"
+                width="282"
+                height="214"
+                alt="Великолепная Седона"
+              />
+            </picture>
           </div>
         </section>
         <section class="page-about">
-          <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <p class="page-about__slogan">
+          <h2 class="visually-hidden">О Седоне</h2>
+          <span class="page-about__slogan">
             Седона - небольшой городок в Аризоне, заслуживающий большего!
-          </p>
-          <p class="page-about__reasons">
+          </span>
+          <span class="page-about__reasons">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-          </p>
+          </span>
         </section>
         <section class="advantages-catalog">
-          <h2 class="visually-hidden">Список преимуществ</h2>
-          <ol class="advantages-catalog__list">
-            <li
-              class="advantages-catalog__item advantages-catalog__item--colored"
-            >
-              <div class="advantages-catalog__item--colored-container">
-                <div class="advantages-catalog__item--colored-wrapper">
+          <h2 class="visually-hidden">Список достопримечательностей</h2>
+                <div
+                  class="advantages-catalog__item-container">
+                  <div class="advantages-catalog__item-wrapper">
                   <h3 class="advantages-catalog__title">Настоящий городок</h3>
-                  <p class="advantages-catalog__number">-№1-</p>
-                  <p class="advantages-catalog__description">
+                  <span class="advantages-catalog__number">-№1-</span>
+                  <span class="advantages-catalog__description">
                     Седона не аттракцион для туристов, там течет своя жизнь
                   </p>
                 </div>
-                <img
-                  class="advanatages-catalog__picture"
-                  src="img/city.jpg"
-                  width="320"
-                  height="260"
-                  alt="Изображение города"
-                />
+                <picture class="advantages-catalog__background">
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/city-desktop.jpg 1x, img/city-desktop-2x.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/city-tablet.jpg 1x, img/city-tablet-2x.jpg 2x"
+                  />
+                  <img
+                    class="advantages-catalog__picture"
+                    src="img/city-mobile.jpg"
+                    width="320"
+                    height="260"
+                    srcset="img/city-mobile-2x.jpg"
+                    alt="Изображение города"
+                  />
+                </picture>
               </div>
               <ul class="advantages-catalog__list addition-list">
                 <li class="addition-list__item addition-list__item--housing">
@@ -106,59 +125,71 @@
                 </li>
               </ul>
             </li>
-            <li
-              class="advantages-catalog__item advantages-catalog__item--colored"
-            >
-              <div class="advantages-catalog__item--colored-container">
-                <div
-                  class="advantages-catalog__item--colored-wrapper advantages-catalog__item--colored-wrapper-swap"
-                >
+              <div class="advantages-catalog__item-container">
+                <picture class="advantages-catalog__background">
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      img/bridge-desktop.jpg    1x,
+                      img/bridge-desktop-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/bridge-tablet.jpg    1x,
+                      img/bridge-tablet-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="advantages-catalog__picture"
+                    src="img/bridge-mobile.jpg"
+                    width="320"
+                    height="260"
+                    srcset="img/bridge-mobile-2x.jpg"
+                    alt="Изображение моста"
+                  />
+                </picture>
+                <div class="advantages-catalog__item-wrapper">
                   <h3 class="advantages-catalog__title">
-                    Там есть мост дъявола
+                    Там есть мост дьявола
                   </h3>
                   <p class="advantages-catalog__number">-№2-</p>
                   <p class="advantages-catalog__description">
                     Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
-                <img
-                  class="advanatages-catalog__picture"
-                  src="img/bridge.jpg"
-                  width="320"
-                  height="260"
-                  alt="Изображение моста"
-                />
               </div>
-            </li>
-            <li
-              class="advantages-catalog__item advantages-catalog__item--secondary"
+            <ol
+              class="addition-catalog__list"
             >
-              <h3 class="advantages-catalog__title">Небольшая площадь</h3>
-              <p class="advantages-catalog__number">-№3-</p>
+            <li class="addition-catalog__item addition-catalog__item--square">
+              <h3 class="addition-catalog__title">Небольшая площадь</h3>
+              <p class="addition-catalog__number">-№3-</p>
               <p
-                class="advantages-catalog__description advantages-catalog__description--secondary"
+                class="addition-catalog__description"
               >
                 Все интересные места находятся очень близко
               </p>
             </li>
             <li
-              class="advantages-catalog__item advantages-catalog__item--secondary"
+              class="addition-catalog__item addition-catalog__item--road"
             >
-              <h3 class="advantages-catalog__title">Красивая дорога</h3>
-              <p class="advantages-catalog__number">-№4-</p>
+              <h3 class="addition-catalog__title">Красивая дорога</h3>
+              <p class="addition-catalog__number">-№4-</p>
               <p
-                class="advantages-catalog__description advantages-catalog__description--secondary"
+                class="addition-catalog__description addition-catalog__description--road"
               >
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li
-              class="advantages-catalog__item advantages-catalog__item--secondary"
+              class="addition-catalog__item addition-catalog__item--tourists"
             >
-              <h3 class="advantages-catalog__title">Мало туристов</h3>
-              <p class="advantages-catalog__number">-№5-</p>
+              <h3 class="addition-catalog__title">Мало туристов</h3>
+              <p class="addition-catalog__number">-№5-</p>
               <p
-                class="advantages-catalog__description advantages-catalog__description--secondary"
+                class="addition-catalog__description addition-catalog__description--tourists"
               >
                 Большинство едет в Гранд Каньон и толпится там
               </p>
@@ -171,23 +202,34 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="page-accomodation__link" href="#"> Найти гостиницу </a>
+          <a class="page-accomodation__link disabled" href="#">Найти гостиницу</a>
           <div class="page-accomodation__map">
-            <iframe
-              src="https://www.google.ru/maps/place/Flagstaff+Pulliam+Airport,+6200+S+Pulliam+Dr,+Flagstaff,+AZ+86005,+United+States/@35.1274553,-111.651999,13z/data=!4m12!1m6!3m5!1s0x872d8ef7da2e2631:0x8e1f3ca1cedbb300!2sFlagstaff,+AZ,+USA!8m2!3d35.1982836!4d-111.651302!3m4!1s0x872d855990476bff:0x94b3a664bc5a4cd5!8m2!3d35.1402957!4d-111.6710476"
-              width="320"
-              height="350"
-              allowfullscreen
-              title="Адрес Седоны"
-            ></iframe>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/map-tablet.jpg 1x, img/map-tablet-2x.jpg 2x"
+              />
+              <img
+                class="page-accomodation__map-picture"
+                src="img/map-mobile.jpg"
+                width="320"
+                height="350"
+                srcset="img/map-mobile-2x.jpg"
+                alt="Карта Седоны"
+              />
+            </picture>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <b class="footer__hashtag">#Visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
+        <span class="footer__hashtag">#Visitsedona</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="vk-icon"
                 aria-hidden="true"
@@ -203,7 +245,7 @@
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
-                    fill="#fff"
+                    fill="currentColor"
                   />
                 </g>
                 <defs>
@@ -215,10 +257,10 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
-                class="tg-icon"
+                class="youtube-icon"
                 aria-hidden="true"
                 focusable="false"
                 width="24"
@@ -229,14 +271,14 @@
               >
                 <path
                   d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
-                  fill="#fff"
+                  fill="currentColor"
                 />
               </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"
@@ -249,7 +291,7 @@
               >
                 <path
                   d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
-                  fill="#fff"
+                  fill="currentColor"
                 />
               </svg>
               <span class="visually-hidden">YouTube</span>

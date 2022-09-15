@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
     <div class="page__body-container">
@@ -18,14 +19,14 @@
             alt="Седона. Поиск гостиниц"
           />
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__list-item main-nav__list-item--main">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
               </li>
               <li class="main-nav__list-item main-nav__list-item--photo">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -42,19 +43,17 @@
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <section class="slogan">
+        <section class="slogan slogan-form">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
           <div class="slogan__wrapper">
-            <img
-              src="img/sedona-title.svg"
-              width="282"
-              height="214"
-              alt="Великолепная Седона"
-            />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/sedona-title-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/sedona-title-desktop.svg">
+              <img class="slogan__wrapper-text" src="img/sedona-title.svg" width="229" height="39" alt="Великолепная Седона">
           </div>
         </section>
         <section class="page-about">
-          <h2 class="page-about__title">Оставьте свой отзыв</h2>
+          <h1 class="page-about__title">Оставьте свой отзыв</h1>
           <p class="page-about__description">
             Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
             посещенных вами достопримечательностях
@@ -67,22 +66,23 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <fieldset class="feedback-form__fieldset">
+          <div class="feedback-form__contacts">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--introduce">
               <legend class="feedback-form__title">Представьтесь</legend>
               <label class="feedback-form__label feedback-form__label--colored"
                 >Имя*</label
               >
-              <input class="feedback-form__input" type="text" required />
+              <input class="feedback-form__input" type="text" required placeholder="Имя" />
               <label class="feedback-form__label feedback-form__label--colored"
                 >Фамилия*</label
               >
-              <input class="feedback-form__input" type="text" required />
+              <input class="feedback-form__input" type="text" required placeholder="Фамилия" />
               <label class="feedback-form__label feedback-form__label--colored"
                 >Отчество</label
               >
-              <input class="feedback-form__input" type="text" />
+              <input class="feedback-form__input" type="text" placeholder="Отчество"/>
             </fieldset>
-            <fieldset class="feedback-form__fieldset">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
               <legend class="feedback-form__title">
                 Контактная информация
               </legend>
@@ -105,6 +105,7 @@
                 required
               />
             </fieldset>
+          </div>
             <fieldset
               class="feedback-form__fieldset feedback-form__fieldset--rating"
             >
@@ -113,39 +114,42 @@
               </legend>
               <ul class="feedback-form__rating-list">
                 <li class="feedback-form__rating-item">
-                  <input
-                    class="feedback-form__input"
-                    type="radio"
-                    name="rating"
-                    value="positive"
-                    required
-                  />
-                  <label class="feedback-form__label"
-                    >Скорее положительное</label
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="radio"
+                      name="rating"
+                      value="positive"
+                      required
+                    />
+                    <span class="feedback-form__input-custom"></span>
+                    Скорее положительное</label
                   >
                 </li>
                 <li class="feedback-form__rating-item">
-                  <input
-                    class="feedback-form__input"
-                    type="radio"
-                    name="rating"
-                    value="negative"
-                    required
-                  />
-                  <label class="feedback-form__label"
-                    >Скорее отрицательное</label
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="radio"
+                      name="rating"
+                      value="positive"
+                      required
+                    />
+                    <span class="feedback-form__input-custom"></span>
+                    Скорее отрицательное</label
                   >
                 </li>
                 <li class="feedback-form__rating-item">
-                  <input
-                    class="feedback-form__input"
-                    type="radio"
-                    name="rating"
-                    value="neutral"
-                    required
-                  />
-                  <label class="feedback-form__label"
-                    >Затрудняюсь ответить</label
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="radio"
+                      name="rating"
+                      value="positive"
+                      required
+                    />
+                    <span class="feedback-form__input-custom"></span>
+                    Затрудняюсь ответить</label
                   >
                 </li>
               </ul>
@@ -158,20 +162,48 @@
               </legend>
               <ul class="feedback-form__attractions-list">
                 <li class="feedback-form__attractions-item">
-                  <input class="feedback-form__input" type="checkbox" checked />
-                  <label class="feedback-form__label">Мост Дъявола</label>
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="checkbox"
+                      checked
+                    />
+                    <span class="feedback-form__input-checkbox"></span>
+                    Мост Дъявола
+                  </label>
                 </li>
                 <li class="feedback-form__attractions-item">
-                  <input class="feedback-form__input" type="checkbox" checked />
-                  <label class="feedback-form__label">Гора-Колокол</label>
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="checkbox"
+                      checked
+                    />
+                    <span class="feedback-form__input-checkbox"></span>
+                    Гора-Колокол
+                  </label>
                 </li>
                 <li class="feedback-form__attractions-item">
-                  <input class="feedback-form__input" type="checkbox" checked />
-                  <label class="feedback-form__label">Слайд-парк</label>
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="checkbox"
+                      checked
+                    />
+                    <span class="feedback-form__input-checkbox"></span>
+                    Слайд-парк
+                  </label>
                 </li>
                 <li class="feedback-form__attractions-item">
-                  <input class="feedback-form__input" type="checkbox" />
-                  <label class="feedback-form__label">Красные скалы</label>
+                  <label class="feedback-form__label">
+                    <input
+                      class="feedback-form__input"
+                      type="checkbox"
+                      checked
+                    />
+                    <span class="feedback-form__input-checkbox"></span>
+                    Красные скалы
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -186,18 +218,21 @@
                 name="review"
                 placeholder="Опишите подробно все свои восторги"
               ></textarea>
+              <div class="feedback-form__actions">
+                <button class="button feedback-form__button" type="submit">
+                  Отправить отзыв
+                </button>
+                  <span class="feedback-form__required">* - Обязательные поля</span>
+                </div>
             </fieldset>
-            <button class="button feedback-form__button" type="submit">
-              Отправить отзыв
-            </button>
           </form>
         </section>
       </main>
       <footer class="footer">
-        <b class="footer__hashtag">#Visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
+        <span class="footer__hashtag">#Visitsedona</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="vk-icon"
                 aria-hidden="true"
@@ -225,8 +260,8 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"
@@ -245,8 +280,8 @@
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <svg
                 class="tg-icon"
                 aria-hidden="true"

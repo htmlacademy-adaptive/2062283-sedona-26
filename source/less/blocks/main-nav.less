@@ -1,7 +1,3 @@
-.main-nav {
-  position: relative;
-}
-
 .main-nav__toggle {
   margin-top: 17px;
   margin-right: 20px;
@@ -16,7 +12,7 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 17px;
+  right: 5%;
   width: 23px;
   height: 4px;
   background-color: #81b3d2;
@@ -53,21 +49,52 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #81b3d2;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
-.main-nav__wrapper {
-  display: none;
+@media (min-width: @mobile-width) {
+  .main-nav__wrapper {
+    position: absolute;
+    display: none;
+    width: 320px;
+    background-color: #81b3d2;
+    left: -138px;
+    top: 0;
+    z-index: 7;
+  }
+
+  .main-nav__link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .main-nav__list {
+    margin: 0 auto;
+  }
+
+  .main-nav__list-item {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    text-align: center;
+    mix-blend-mode: normal;
+    box-shadow: 0 1 0 rgba(1, 1, 1, 0.2), inset 0 1 0 rgba(255, 255, 255, 0.2);
+    width: 320px;
+  }
+
+  .main-nav__list-item--academy {
+    box-shadow: inset 0 1 0 rgba(255, 255, 255, 0.2);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: static;
   }
 
   .main-nav__list {
@@ -76,6 +103,15 @@
     padding-top: 18px;
     padding-bottom: 17px;
     padding-right: 5px;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .main-nav__list-item {
+    padding: 0;
+    width: auto;
+    box-shadow: none;
   }
 
   .main-nav__list-item--main {
@@ -102,13 +138,14 @@
     background-color: #ffffff;
     justify-content: space-between;
     width: 100%;
+    padding: 0;
   }
 
   .main-nav__list-item {
     padding-top: 18px;
     padding-bottom: 17px;
-    margin-left: 91px;
-    margin-right: 71px;
+    margin-left: 61px;
+    margin-right: 25px;
     z-index: 1;
   }
 
@@ -128,5 +165,9 @@
   .main-nav__link {
     text-decoration: none;
     color: #000000;
+  }
+
+  .main-nav__link--main {
+    color: rgba(118, 99, 87, 1);
   }
 }

@@ -10,12 +10,79 @@
 
 .video-presentation__notice {
   margin-bottom: 38px;
+  text-transform: uppercase;
 }
 
 .video-presentation__description {
   margin: 0;
   text-align: center;
   margin-bottom: 38px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.video-presentation__video {
+  position: relative;
+}
+
+.video-presentation__button {
+  position: absolute;
+  display: flex;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 48px;
+  height: 54px;
+  border: none;
+  outline: none;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: @mobile-width) {
+  .video-presentation__video {
+    width: 280px;
+    height: 177px;
+    background-image: url("../img/video-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 280px 177px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-tablet-2x.jpg");
+    background-size: 280px 177px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation__video {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/video-tablet.jpg");
+    background-size: 768px 518px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-tablet-2x.jpg");
+    background-size: 768px 518px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation__video {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/video-desktop.jpg");
+    background-size: cover;
+    margin-bottom: 120px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-desktop-2x.jpg");
+    background-size: cover;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -28,12 +95,6 @@
     width: 500px;
     text-align: center;
   }
-
-  .video-presentation__video {
-    background: url("../img/video-desktop.jpg") no-repeat center;
-    width: 648px;
-    height: 500px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -41,13 +102,4 @@
     margin: 0;
     padding-top: 100px;
   }
-}
-
-.video-presentation__notice {
-  text-transform: uppercase;
-}
-
-.video-presentation__description {
-  color: #333333;
-  text-transform: uppercase;
 }

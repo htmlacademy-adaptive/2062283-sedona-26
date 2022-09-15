@@ -5,7 +5,10 @@
 }
 
 .main-header__logo {
-  margin-left: 67px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
   height: 96px;
 }
 
@@ -14,31 +17,14 @@
     display: block;
   }
 
-  .main-header__logo {
-    position: absolute;
-    margin: 0;
-    left: 290px;
-    z-index: 2;
-  }
-
   .main-nav__toggle {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-header__logo {
-    position: absolute;
-    margin: 0;
-    left: 540px;
-  }
-
   .main-nav__toggle {
     display: none;
+    margin-left: 25px;
   }
-
-
-.main-nav__toggle {
-  margin-left: 25px;
-}
 }
