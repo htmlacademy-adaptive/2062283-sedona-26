@@ -53,7 +53,7 @@
           </div>
         </section>
         <section class="page-about">
-          <h2 class="page-about__title">Оставьте свой отзыв</h2>
+          <h1 class="page-about__title">Оставьте свой отзыв</h1>
           <p class="page-about__description">
             Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
             посещенных вами достопримечательностях
@@ -67,7 +67,7 @@
             method="post"
           >
           <div class="feedback-form__contacts">
-            <fieldset class="feedback-form__fieldset">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--introduce">
               <legend class="feedback-form__title">Представьтесь</legend>
               <label class="feedback-form__label feedback-form__label--colored"
                 >Имя*</label
@@ -82,7 +82,7 @@
               >
               <input class="feedback-form__input" type="text" placeholder="Отчество"/>
             </fieldset>
-            <fieldset class="feedback-form__fieldset">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
               <legend class="feedback-form__title">
                 Контактная информация
               </legend>
@@ -207,7 +207,6 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="feedback-form__review">
             <fieldset
               class="feedback-form__fieldset feedback-form__fieldset--review"
             >
@@ -219,12 +218,13 @@
                 name="review"
                 placeholder="Опишите подробно все свои восторги"
               ></textarea>
+              <div class="feedback-form__actions">
+                <button class="button feedback-form__button" type="submit">
+                  Отправить отзыв
+                </button>
+                  <span class="feedback-form__required">* - Обязательные поля</span>
+                </div>
             </fieldset>
-            <button class="button feedback-form__button" type="submit">
-              Отправить отзыв
-            </button>
-          </div>
-            <span class="feedback-form__required">* - Обязательные поля</span>
           </form>
         </section>
       </main>

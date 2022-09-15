@@ -15,6 +15,10 @@
   padding: 0;
 }
 
+.feedback-form__fieldset--review {
+  width: min(100%, 768px);
+}
+
 .feedback-form__input {
   display: flex;
   background-color: #f2f2f2;
@@ -123,7 +127,7 @@ input[type="text"] {
   background-color: #f2f2f2;
   border: none;
   outline: none;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -132,23 +136,47 @@ input[type="text"] {
   padding: 16px;
   box-sizing: border-box;
   width: 100%;
+  height: 150px;
+  margin-bottom: 56px;
+}
+
+.feedback-form__textarea::placeholder {
+  color: currentColor;
 }
 
 .feedback-form__button {
+  background-color: #81b3d2;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: min(100%, 324px);
+  padding: 15px;
   margin-bottom: 3px;
+}
+
+.feedback-form__actions {
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback-form__required {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 94%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
 }
 
 @media (min-width: @tablet-width) {
@@ -159,20 +187,21 @@ input[type="text"] {
   }
 
   .feedback-form__form {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
     column-gap: 88px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-form__fieldset--introduce,
+  .feedback-form__fieldset--contacts {
+    width: 43%;
   }
 
   .feedback-form__contacts {
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-
-
-  .feedback-form__fieldset {
-    width: 42%;
   }
 
   .feedback-form__fieldset--attractions {
@@ -184,15 +213,14 @@ input[type="text"] {
     width: 100%;
   }
 
+
   .feedback-form__rating-list {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
-    margin: auto;
-  }
-
-  .feedback-form__rating-item:first-child {
-    margin-right: 49px;
+    margin: 0 auto;
+    width: 84%;
+    row-gap: 16px;
+    column-gap: 49px;
   }
 
   .feedback-form__attractions-list {
@@ -208,8 +236,8 @@ input[type="text"] {
   }
 
   .feedback-form__textarea {
-    width: 648px;
     margin: 0;
+    margin-bottom: 48px;
   }
 
   .feedback-form__review {
@@ -226,9 +254,13 @@ input[type="text"] {
     margin: 0;
   }
 
+  .feedback-form__actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .feedback-form__required {
-    width: 24%;
-    justify-content: flex-start;
+    color: rgba(51, 51, 51, 1);
   }
 }
 
@@ -244,12 +276,11 @@ input[type="text"] {
     grid-column-gap: 128px;
   }
 
-
   .feedback-form__title {
     margin-bottom: 55px;
   }
 
-  .feedback-form__rating-list,
+
   .feedback-form__attractions-list {
     display: flex;
     justify-content: space-between;
@@ -270,28 +301,17 @@ input[type="text"] {
 
   .feedback-form__button {
     margin: 0;
-    margin-left: 95px;
     justify-content: center;
   }
-
-  .feedback-form__required {
-    width: 36%;
-    justify-content: center;
-  }
-
 
   .feedback-form__rating-list {
     width: 90%;
-    justify-content: space-between;
+    gap: 62px;
+    justify-content: center;
   }
 
-  .feedback-form__attractions-list {
-    justify-content: space-between;
-    width: 100%;
-  }
 
   .feedback-form__textarea {
-    width: 768px;
     margin-bottom: 48px;
   }
 }
@@ -303,7 +323,7 @@ input[type="text"] {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 
@@ -359,26 +379,7 @@ input[type="checkbox"] {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.feedback-form__button {
-  background-color: #81b3d2;
-  outline: none;
-  border: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  font-family: "PT Sans", sans-serif;
-  display: flex;
-  padding-left: 40px;
-  padding-right: 40px;
-  justify-content: center;
-  margin-right: auto;
-}
-
 .feedback-form__rating-list {
   list-style: none;
   padding: 0;
 }
-
-
