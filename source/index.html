@@ -121,17 +121,17 @@
                   </p>
                 </div>
                 <picture class="advantages-catalog__background">
-                  <source type="image/webp" srcset="img/city-desktop.webp, img/city-desktop-2x.webp">
-                  <source type="image/webp" srcset="img/city-tablet.webp, img/city-tablet-2x.webp">
-                  <source type="image/webp" srcset="img/city-mobile.webp, img/city-mobile-2x.webp">
+                  <source media="(min-width: 1280px)" type="image/webp" srcset="img/city-desktop.webp, img/city-desktop-2x.webp">
                   <source
                     media="(min-width: 1280px)"
                     srcset="img/city-desktop.jpg 1x, img/city-desktop-2x.jpg 2x"
                   />
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/city-tablet.webp, img/city-tablet-2x.webp">
                   <source
                     media="(min-width: 768px)"
                     srcset="img/city-tablet.jpg 1x, img/city-tablet-2x.jpg 2x"
                   />
+                  <source type="image/webp" srcset="img/city-mobile.webp, img/city-mobile-2x.webp">
                   <img
                     class="advantages-catalog__picture"
                     src="img/city-mobile.jpg"
@@ -271,7 +271,6 @@
               <svg
                 class="vk-icon"
                 aria-hidden="true"
-                focusable="false"
                 width="24"
                 height="24">
                 <use xlink:href="#icon-vk"></use>
@@ -284,7 +283,6 @@
               <svg
                 class="youtube-icon"
                 aria-hidden="true"
-                focusable="false"
                 width="24"
                 height="24">
                 <use xlink:href="#icon-yt"></use>
@@ -297,7 +295,6 @@
               <svg
                 class="tg-icon"
                 aria-hidden="true"
-                focusable="false"
                 width="24"
                 height="24">
                 <use xlink:href="#icon-tg"></use>
