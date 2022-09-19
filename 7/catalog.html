@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <base href="https://htmlacademy-adaptive.github.io/2062283-sedona-26/7/">
+</head>
+  <body class="page__body">
+    <svg style="display: none;">
+      <symbol viewBox="0 0 24 24" id="icon-vk" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#a)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="icon-yt" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
+                  fill="currentColor"
+                />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="icon-tg" fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
+        fill="currentColor"
+      />
+      </symbol>
+    </svg>
+    <div class="page__body-container">
+      <header class="main-header">
+        <a class="main-header__logo" href="index.html">
+          <img
+            class="main-header__logo-image"
+            src="img/logo-sedona.svg"
+            width="185"
+            height="96"
+            alt="Седона. Поиск гостиниц"
+          />
+        </a>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item main-nav__list-item--main">
+                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__list-item main-nav__list-item--photo">
+                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__list-item main-nav__list-item--feedback">
+                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__list-item main-nav__list-item--academy">
+                <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main-container">
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        <section class="slogan slogan-catalog">
+          <h2 class="visually-hidden">Седона-это про красоту</h2>
+          <div class="slogan__wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/sedona-title-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/sedona-title-desktop.svg">
+              <img class="slogan__wrapper-text" src="img/sedona-title.svg" width="229" height="39" alt="Великолепная Седона">
+          </div>
+        </section>
+        <section class="page-about">
+          <h2 class="page-about__title">Фото и видео</h2>
+          <p class="page-about__description">
+            Не можете решиться на путешествие из-за курса ? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+        </section>
+        <section class="attractions-sightseeing">
+          <h2 class="visually-hidden">Достопримечательности Седоны</h2>
+          <ul class="attractions-sightseeing__list">
+            <li
+              class="attractions-sightseeing__item attractions-sightseeing__item--road"
+            >
+              <picture class="attractions-sightseeing__image">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="img/road-desktop.jpg, img/road-desktop-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/road-tablet.jpg, img/road-tablet-2x.jpg 2x"
+                />
+                <img
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--road"
+                  src="img/road-mobile.jpg"
+                  srcset="img/road-mobile-2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Изображение дороги"
+                />
+              </picture>
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--road"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
+                  <span class="attractions-sightseeing__title"
+                    >Неродные просторы</span
+                  >
+                  <span class="attractions-sightseeing__author"
+                    >Автор фото: Борис</span
+                  >
+                </div>
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
+                  <span class="attractions-sightseeing__likes">1350</span>
+                  <button class="attractions-sightseeing__thumb" type="button">
+                    <span class="visually-hidden">Палец вверх</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li
+              class="attractions-sightseeing__item attractions-sightseeing__item--cactus"
+            >
+              <picture class="attractions-sightseeing__image">
+                <source
+                  srcset="
+                  img/cactus-desktop.jpg,
+                  img/cactus-desktop-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="img/cactus-mobile.jpg, img/cactus-mobile-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--cactus"
+                  src="img/cactus-mobile.jpg"
+                  srcset="img/cactus-mobile-2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Изображение кактуса"
+                />
+              </picture>
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--cactus"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
+                  <span class="attractions-sightseeing__title"
+                    >Местная растительность</span
+                  >
+                  <span class="attractions-sightseeing__author"
+                    >Автор фото: Сергей</span
+                  >
+                </div>
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
+                  <span class="attractions-sightseeing__likes">143</span>
+                  <button class="attractions-sightseeing__thumb" type="button">
+                    <span class="visually-hidden">Палец вверх</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li
+              class="attractions-sightseeing__item attractions-sightseeing__item-serpentine"
+            >
+              <picture class="attractions-sightseeing__image attractions-sightseeing__picture--serpentine">
+                <source
+                  srcset="
+                  img/serpentine-desktop.jpg,
+                  img/serpentine-desktop-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                  img/serpentine-tablet.jpg,
+                  img/serpentine-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
+                  src="img/serpentine-mobile.jpg"
+                  srcset="img/serpentine-mobile-2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Изображение моста"
+                />
+              </picture>
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--serpentine"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
+                  <span class="attractions-sightseeing__title"
+                    >Дорога на север</span
+                  >
+                  <span class="attractions-sightseeing__author"
+                    >Автор фото: Петр</span
+                  >
+                </div>
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
+                  <span class="attractions-sightseeing__likes">96</span>
+                  <button class="attractions-sightseeing__thumb" type="button">
+                    <span class="visually-hidden">Палец вверх</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li
+              class="attractions-sightseeing__item attractions-sightseeing__item--bridge"
+            >
+              <picture class="attractions-sightseeing__image">
+                <source
+                  srcset="
+                  img/catalog-bridge-desktop.jpg,
+                  img/catalog-bridge-desktop-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog-bridge-tablet.jpg,
+                    img/catalog-bridge-tablet-2x.jpg 2x"
+                />
+                <img
+                  class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
+                  src="img/catalog-bridge-mobile.jpg"
+                  srcset="img/catalog-bridge-mobile-2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Изображение моста"
+                />
+              </picture>
+              <div
+                class="attractions-sightseeing__container attractions-sightseeing__container--bridge"
+              >
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--description"
+                >
+                  <span class="attractions-sightseeing__title"
+                    >Мост дъявола</span
+                  >
+                  <span class="attractions-sightseeing__author"
+                    >Автор фото: Антон</span
+                  >
+                </div>
+                <div
+                  class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
+                >
+                  <span class="attractions-sightseeing__likes">254</span>
+                  <button class="attractions-sightseeing__thumb" type="button">
+                    <span class="visually-hidden">Палец вверх</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="video-presentation">
+          <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
+          <b class="video-presentation__notice">Все еще сомневаетесь?</b>
+          <p class="video-presentation__description">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
+          <div class="video-presentation__video">
+            <button class="video-presentation__button" type="button">
+              <span class="visually-hidden">Запустить презентацию</span>
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <span class="footer__hashtag">#Visitsedona</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg
+                class="vk-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="24"
+                height="24">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg
+                class="youtube-icon"
+                aria-hidden="true"
+                width="24"
+                height="24">
+                <use xlink:href="#icon-yt"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg
+                class="tg-icon"
+                aria-hidden="true"
+                width="24"
+                height="24">
+                <use xlink:href="#icon-tg"></use>
+              </svg>
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="#">Разработано</a>
+      </footer>
+    </div>
+  </body>
+</html>
