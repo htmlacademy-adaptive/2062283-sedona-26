@@ -8,7 +8,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
-import svgstore from 'gulp-svgstore';
+import svgSprite from 'gulp-svg-sprite';
 
 // Styles
 
@@ -28,13 +28,13 @@ export const styles = () => {
 // Images
 
 export const optimizeImages = () => {
- return gulp.src('source/img/*')
+ return gulp.src('source/img/**/*.{jpeg,jpg,png,svg}')
     .pipe(imagemin())
     .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/*')
+  return gulp.src('source/img/**/*.{jpeg,jpg,png,svg}')
     .pipe(gulp.dest('build/img'));
 }
 
@@ -46,16 +46,20 @@ export const createWebp = () => {
         .pipe(gulp.dest('build/img'))
 }
 
-
 // Sprite
 
 export const sprite = () => {
   return gulp.src('source/img/**/*.svg')
-    .pipe(imagemin())
-    .pipe(svgstore({
-      inlineSvg: true
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: 'sprite.svg',
+        },
+      },
     }))
-    .pipe(rename('sprite.svg'))
+    .pipe(rename({
+      dirname: './'
+    }))
     .pipe(gulp.dest('build/img'))
 }
 
