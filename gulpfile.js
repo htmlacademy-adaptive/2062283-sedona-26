@@ -28,7 +28,7 @@ export const styles = () => {
 // Images
 
 export const optimizeImages = () => {
- return gulp.src('source/img/**/*.{jpeg,jpg,png,svg}')
+  return gulp.src('source/img/**/*.{jpeg,jpg,png,svg}')
     .pipe(imagemin())
     .pipe(gulp.dest('build/img'))
 }
@@ -41,9 +41,9 @@ const copyImages = () => {
 // WebP
 
 export const createWebp = () => {
- return gulp.src('source/img/**/*.{jpg,png}')
-        .pipe(webp())
-        .pipe(gulp.dest('build/img'))
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(webp())
+    .pipe(gulp.dest('build/img'))
 }
 
 // Sprite
