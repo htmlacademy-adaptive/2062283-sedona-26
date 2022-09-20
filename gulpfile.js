@@ -2,8 +2,13 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import imagemin from 'gulp-imagemin';
+import webp from 'gulp-webp';
+import svgstore from 'gulp-svgstore';
 
 // Styles
 
@@ -12,10 +17,46 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+// Images
+
+export const optimizeImages = () => {
+ return gulp.src('source/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/*')
+    .pipe(gulp.dest('build/img'));
+}
+
+// WebP
+
+export const createWebp = () => {
+ return gulp.src('source/img/**/*.{jpg,png}')
+        .pipe(webp())
+        .pipe(gulp.dest('build/img'))
+}
+
+
+// Sprite
+
+export const sprite = () => {
+  return gulp.src('source/img/**/*.svg')
+    .pipe(imagemin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'))
 }
 
 // Server
@@ -23,7 +64,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
