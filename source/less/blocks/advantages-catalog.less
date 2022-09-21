@@ -121,14 +121,14 @@
   background: url("../img/icon-gift.svg.svg") no-repeat top;
 }
 
-.addition-catalog__list {
+.secondary-list {
   list-style: none;
   margin: 0;
   text-align: center;
   padding: 0;
 }
 
-.addition-catalog__item {
+.secondary-list__item {
   position: relative;
   background-color: #eeeeee;
   padding-top: 42px;
@@ -140,8 +140,8 @@
   align-items: center;
 }
 
-.addition-catalog__item--square::before,
-.addition-catalog__item--road::before {
+.secondary-list__item--square::before,
+.secondary-list__item--road::before {
   position: absolute;
   content: "";
   background: url("../img/line.svg") no-repeat;
@@ -151,11 +151,11 @@
   bottom: 0;
 }
 
-.addition-catalog__item--tourists {
+.secondary-list__item--tourists {
   padding-bottom: 26px;
 }
 
-.addition-catalog__title {
+.secondary-list__title {
   margin: 0;
   font-style: normal;
   font-weight: 700;
@@ -165,7 +165,7 @@
   margin-bottom: 10px;
 }
 
-.addition-catalog__number {
+.secondary-list__number {
   margin: 0;
   font-style: normal;
   font-weight: 400;
@@ -176,7 +176,7 @@
   margin-bottom: 26px;
 }
 
-.addition-catalog__description {
+.secondary-list__description {
   margin: 0;
   font-style: normal;
   font-weight: 400;
@@ -199,7 +199,7 @@
     width: 100%;
   }
 
-  .addition-catalog__title {
+  .secondary-list__title {
     max-width: 120px;
   }
 
@@ -279,43 +279,44 @@
     height: 256px;
   }
 
-  .addition-catalog__list {
+  .secondary-list {
     display: flex;
     box-sizing: border-box;
+    flex-wrap: inherit;
   }
 
-  .addition-catalog__item:not(:last-child) {
+  .secondary-list__item:not(:last-child) {
     margin: 0;
   }
 
-  .addition-catalog__item {
+  .secondary-list__item {
     padding-top: 42px;
     width: 33.3%;
     background-color: #eeeeee;
   }
 
-  .addition-catalog__description--road {
+  .secondary-list__description--road {
     max-width: 130px;
   }
 
-  .addition-catalog__description--tourists {
+  .secondary-list__description--tourists {
     max-width: 150px;
   }
 
-  .addition-catalog__item--tourists {
+  .secondary-list__item--tourists {
     padding-bottom: 42px;
     padding-left: 41px;
     padding-right: 40px;
   }
 
-  .addition-catalog__item--square {
+  .secondary-list__item--square {
     padding-bottom: 63px;
     padding-left: 33px;
     padding-right: 34px;
   }
 
-  .addition-catalog__item--square::before,
-  .addition-catalog__item--road::before {
+  .secondary-list__item--square::before,
+  .secondary-list__item--road::before {
     display: none;
   }
 }

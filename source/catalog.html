@@ -47,35 +47,35 @@
     </svg>
     <div class="page__body-container">
       <header class="main-header">
-        <a class="main-header__logo" href="index.html">
-          <img
-            class="main-header__logo-image"
-            src="img/logo-sedona.svg"
-            width="185"
-            height="96"
-            alt="Седона. Поиск гостиниц"
-          />
-        </a>
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__list-item main-nav__list-item--main">
+            <ul class="main-nav__list main-nav__list--closed">
+              <li class="main-nav__item main-nav__item--main">
                 <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
               </li>
-              <li class="main-nav__list-item main-nav__list-item--photo">
+              <li class="main-nav__item main-nav__item--photo">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
               </li>
-              <li class="main-nav__list-item main-nav__list-item--feedback">
+              <li class="main-nav__item main-nav__item--logo">
+                <a class="main-nav__logo" href="index.html">
+                  <img
+                    class="main-nav__logo-image"
+                    src="img/logo-sedona.svg"
+                    width="185"
+                    height="96"
+                    alt="Седона. Поиск гостиниц"
+                  />
+                </a>
+              </li>
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Форма отзыва</a>
               </li>
-              <li class="main-nav__list-item main-nav__list-item--academy">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
               </li>
             </ul>
-          </div>
         </nav>
       </header>
       <main class="main-container">
@@ -192,7 +192,7 @@
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item-serpentine"
             >
-              <picture class="attractions-sightseeing__image attractions-sightseeing__picture--serpentine">
+              <picture class="attractions-sightseeing__image attractions-sightseeing__image--serpentine">
                 <source
                   srcset="
                   img/serpentine-desktop.jpg,
