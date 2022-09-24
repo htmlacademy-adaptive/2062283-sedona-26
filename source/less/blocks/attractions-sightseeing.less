@@ -5,7 +5,7 @@
 .attractions-sightseeing__list {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 18px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -17,7 +17,27 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
+}
+
+.attractions-sightseeing__item--road {
+  margin-bottom: 32px;
+}
+
+.attractions-sightseeing__item--cactus {
+  margin-bottom: 33px;
+}
+
+.attractions-sightseeing__item-serpentine {
+  margin-bottom: 33px;
+}
+
+.attractions-sightseeing__link {
+  margin-bottom: 10px;
+}
+
+.attractions-sightseeing__link--serpentine {
+  margin-bottom: 8px;
 }
 
 .attractions-sightseeing__item::before {
@@ -32,13 +52,14 @@
 }
 
 .attractions-sightseeing__image {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .attractions-sightseeing__picture {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  height: 280px;
 }
 
 .attractions-sightseeing__title {
@@ -54,14 +75,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .attractions-sightseeing__likes {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .attractions-sightseeing__wrapper--description {
@@ -73,6 +94,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  align-items: baseline;
 }
 
 .attractions-sightseeing__thumb {
@@ -97,8 +119,16 @@
     margin-bottom: 0;
   }
 
+  .attractions-sightseeing__item--road {
+    height: 480px;
+  }
+
+  .attractions-sightseeing__item--cactus {
+    height: 346px;
+  }
+
   .attractions-sightseeing__item--bridge {
-    margin-top: 16px;
+    height: 348px;
   }
 
   .attractions-sightseeing__item::before {
@@ -122,12 +152,17 @@
     width: 50%;
   }
 
+  .attractions-sightseeing__image {
+    margin-bottom: 75px;
+  }
+
   .attractions-sightseeing__picture--road {
     height: 400px;
   }
 
   .attractions-sightseeing__picture--cactus,
-  .attractions-sightseeing__picture--bridge {
+  .attractions-sightseeing__picture--bridge,
+  .attractions-sightseeing__picture--serpentine {
     height: 267px;
   }
 
@@ -148,11 +183,13 @@
   .attractions-sightseeing__wrapper--description {
     display: flex;
     flex-direction: column;
+    height: 43px;
   }
 
   .attractions-sightseeing__wrapper--likes {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 5px;
   }
 
   .attractions-sightseeing__thumb {
@@ -183,6 +220,7 @@
     min-width: 1200px;
     width: 100%;
     margin: 0;
+    height: 383px;
   }
 
   .attractions-sightseeing__item--cactus,
@@ -190,8 +228,10 @@
     margin-top: 16px;
   }
 
+
   .attractions-sightseeing__item:not(:first-child) {
     width: 33.33%;
+    height: 250px;
   }
 
   .attractions-sightseeing__container {
@@ -201,6 +241,12 @@
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
+    margin-top: 12px;
+  }
+
+  .attractions-sightseeing__container--road {
+    height: 80px;
+    margin-top: 15px;
   }
 
   .attractions-sightseeing__title,

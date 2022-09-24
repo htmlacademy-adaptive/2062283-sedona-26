@@ -63,14 +63,58 @@
           fill="currentColor"
         />
       </symbol>
+      <symbol
+        viewBox="0 0 27 35"
+        id="icon-academy"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+        />
+      </symbol>
     </svg>
     <div class="page__body-container">
       <header class="main-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+          <button
+            class="main-nav__toggle main-nav__toggle--opened"
+            type="button"
+          >
+            <svg
+              class="main-nav__close"
+              aria-hidden="true"
+              width="23"
+              height="23"
+              title="Открыть меню"
+              viewBox="0 0 23 23"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"
+                fill="currentColor"
+              />
+            </svg>
           </button>
-          <ul class="main-nav__list main-nav__list--closed">
+          <button
+            class="main-nav__toggle main-nav__toggle--closed"
+            type="button"
+          >
+            <svg
+              class="main-nav__open"
+              aria-hidden="true"
+              width="24"
+              height="20"
+              title="Закрыть меню"
+              viewBox="0 0 24 20"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
+            </svg>
+          </button>
+          <ul class="main-nav__list main-nav__list--opened">
             <li class="main-nav__item main-nav__item--main">
               <a class="main-nav__link main-nav__link--main" href="index.html"
                 >Главная</a
@@ -90,10 +134,10 @@
                 />
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--form">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--academy">
               <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
             </li>
           </ul>
@@ -126,7 +170,7 @@
         <section class="page-about">
           <h2 class="visually-hidden">О Седоне</h2>
           <span class="page-about__slogan">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
+            Седона -- небольшой городок в Аризоне, заслуживающий большего!
           </span>
           <span class="page-about__reasons">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -137,43 +181,49 @@
           <div class="advantages-catalog__item-container">
             <div class="advantages-catalog__item-wrapper">
               <h3 class="advantages-catalog__title">Настоящий городок</h3>
-              <span class="advantages-catalog__number">-№1-</span>
-              <span class="advantages-catalog__description">
+              <span
+                class="advantages-catalog__number advantages-catalog__number--city"
+                >-№1-</span
+              >
+              <span
+                class="advantages-catalog__description advantages-catalog__description--city"
+              >
                 Седона не аттракцион для туристов, там течет своя жизнь
               </span>
             </div>
-            <picture class="advantages-catalog__background">
-              <source
-                srcset="img/city-desktop.webp, img/city-desktop-2x.webp 2x"
-                media="(min-width: 1280px)"
-                type="image/webp"
-              />
-              <source
-                srcset="img/city-desktop.jpg, img/city-desktop-2x.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="img/city-tablet.webp, img/city-tablet-2x.webp 2x"
-                media="(min-width: 768px)"
-                type="image/webp"
-              />
-              <source
-                srcset="img/city-tablet.jpg, img/city-tablet-2x.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="img/city-mobile.webp, img/city-mobile-2x.webp 2x"
-                type="image/webp"
-              />
-              <img
-                class="advantages-catalog__picture"
-                src="img/city-mobile.jpg"
-                srcset="img/city-mobile-2x.jpg 2x"
-                width="320"
-                height="260"
-                alt="Изображение города"
-              />
-            </picture>
+            <a href="#"
+              ><picture class="advantages-catalog__background">
+                <source
+                  srcset="img/city-desktop.webp, img/city-desktop-2x.webp 2x"
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/city-desktop.jpg, img/city-desktop-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="img/city-tablet.webp, img/city-tablet-2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/city-tablet.jpg, img/city-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="img/city-mobile.webp, img/city-mobile-2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="advantages-catalog__picture"
+                  src="img/city-mobile.jpg"
+                  srcset="img/city-mobile-2x.jpg 2x"
+                  width="320"
+                  height="260"
+                  alt="Изображение города"
+                /> </picture
+            ></a>
           </div>
           <ul class="advantages-catalog__list addition-list">
             <li class="addition-list__item addition-list__item--housing">
@@ -184,40 +234,59 @@
             </li>
             <li class="addition-list__item addition-list__item--food">
               <span class="addition-list__title">Еда</span>
-              <span class="addition-list__description">
+              <span
+                class="addition-list__description addition-list__description--food"
+              >
                 Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </span>
             </li>
             <li class="addition-list__item addition-list__item--gift">
               <span class="addition-list__title">Сувениры</span>
-              <span class="addition-list__description">
+              <span
+                class="addition-list__description addition-list__description--gift"
+              >
                 Не только китайского, но и местного производства!
               </span>
             </li>
           </ul>
-          <div class="advantages-catalog__item-container">
-            <picture class="advantages-catalog__background">
-              <source
-                srcset="img/bridge-desktop.jpg, img/bridge-desktop-2x.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="img/bridge-tablet.jpg, img/bridge-tablet-2x.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <img
-                class="advantages-catalog__picture"
-                src="img/bridge-mobile.jpg"
-                srcset="img/bridge-mobile-2x.jpg 2x"
-                width="320"
-                height="260"
-                alt="Изображение моста"
-              />
-            </picture>
-            <div class="advantages-catalog__item-wrapper">
-              <h3 class="advantages-catalog__title">Там есть мост дьявола</h3>
-              <p class="advantages-catalog__number">-№2-</p>
-              <p class="advantages-catalog__description">
+          <div
+            class="advantages-catalog__item-container advantages-catalog__item-container--bridge"
+          >
+            <a href="#"
+              ><picture class="advantages-catalog__background">
+                <source
+                  srcset="img/bridge-desktop.jpg, img/bridge-desktop-2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="img/bridge-tablet.jpg, img/bridge-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="advantages-catalog__picture"
+                  src="img/bridge-mobile.jpg"
+                  srcset="img/bridge-mobile-2x.jpg 2x"
+                  width="320"
+                  height="260"
+                  alt="Изображение моста"
+                /> </picture
+            ></a>
+            <div
+              class="advantages-catalog__item-wrapper advantages-catalog__item-wrapper--bridge"
+            >
+              <h3
+                class="advantages-catalog__title advantages-catalog__title--bridge"
+              >
+                Там есть мост дьявола
+              </h3>
+              <p
+                class="advantages-catalog__number advantages-catalog__number--bridge"
+              >
+                -№2-
+              </p>
+              <p
+                class="advantages-catalog__description advantages-catalog__description--bridge"
+              >
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
@@ -253,8 +322,10 @@
         <section class="page-accomodation">
           <h2 class="page-accomodation__notice">Заинтересовались?</h2>
           <p class="page-accomodation__description">
-            Укажите предполагаемые даты поездки,<br />
-            и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,
+            <span class="page-accomodation__text"
+              >и мы покажем вам лучшие предложения гостиниц в Седоне</span
+            >
           </p>
           <button class="page-accomodation__button" type="button">
             Найти гостиницу
@@ -273,10 +344,15 @@
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
-              <svg class="vk-icon" aria-hidden="true" width="24" height="24">
+              <svg
+                class="vk-icon"
+                aria-hidden="true"
+                width="24"
+                height="24"
+                title="Вконтакте"
+              >
                 <use xlink:href="#icon-vk"></use>
               </svg>
-              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer__social-item">
@@ -286,22 +362,40 @@
                 aria-hidden="true"
                 width="24"
                 height="24"
+                title="Телеграм"
               >
                 <use xlink:href="#icon-yt"></use>
               </svg>
-              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
-              <svg class="tg-icon" aria-hidden="true" width="24" height="24">
+              <svg
+                class="tg-icon"
+                aria-hidden="true"
+                width="24"
+                height="24"
+                title="YouTube"
+              >
                 <use xlink:href="#icon-tg"></use>
               </svg>
-              <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
-        <a class="footer__copyright" href="#">Разработано</a>
+        <a
+          class="footer__copyright"
+          href="https://up.htmlacademy.ru/profession/frontender/14/adaptive/26"
+          >Разработано
+          <svg
+            class="academy-icon"
+            aria-hidden="true"
+            width="27"
+            height="35"
+            title="Академия"
+          >
+            <use xlink:href="#icon-academy"></use>
+          </svg>
+        </a>
       </footer>
     </div>
   </body>

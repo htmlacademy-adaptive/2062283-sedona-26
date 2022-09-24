@@ -6,91 +6,168 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/ptsansbold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body">
-    <svg style="display: none;">
-      <symbol viewBox="0 0 24 24" id="icon-vk" fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#a)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
-                    fill="currentColor"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h24v24H0z" />
-                  </clipPath>
-                </defs>
+    <svg style="display: none">
+      <symbol
+        viewBox="0 0 24 24"
+        id="icon-vk"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#a)">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+            fill="currentColor"
+          />
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 0h24v24H0z" />
+          </clipPath>
+        </defs>
       </symbol>
-      <symbol viewBox="0 0 24 24" id="icon-yt" fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
-                  fill="currentColor"
-                />
+      <symbol
+        viewBox="0 0 24 24"
+        id="icon-yt"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
+          fill="currentColor"
+        />
       </symbol>
-      <symbol viewBox="0 0 24 24" id="icon-tg" fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
+      <symbol
+        viewBox="0 0 24 24"
+        id="icon-tg"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol
+        viewBox="0 0 27 35"
+        id="icon-academy"
         fill="currentColor"
-      />
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+        />
       </symbol>
     </svg>
     <div class="page__body-container">
       <header class="main-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+          <button
+            class="main-nav__toggle main-nav__toggle--opened"
+            type="button"
+          >
+            <svg
+              class="main-nav__close"
+              aria-hidden="true"
+              width="23"
+              height="23"
+              title="Открыть меню"
+              viewBox="0 0 23 23"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"
+                fill="currentColor"
+              />
+            </svg>
           </button>
-            <ul class="main-nav__list main-nav__list--closed">
-              <li class="main-nav__item main-nav__item--main">
-                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item main-nav__item--photo">
-                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-              </li>
-              <li class="main-nav__item main-nav__item--logo">
-                <a class="main-nav__logo" href="index.html">
-                  <img
-                    class="main-nav__logo-image"
-                    src="img/logo-sedona.svg"
-                    width="185"
-                    height="96"
-                    alt="Седона. Поиск гостиниц"
-                  />
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
-              </li>
-            </ul>
+          <button
+            class="main-nav__toggle main-nav__toggle--closed"
+            type="button"
+          >
+            <svg
+              class="main-nav__open"
+              aria-hidden="true"
+              width="24"
+              height="20"
+              title="Закрыть меню"
+              viewBox="0 0 24 20"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
+            </svg>
+          </button>
+          <ul class="main-nav__list main-nav__list--closed">
+            <li class="main-nav__item main-nav__item--main">
+              <a class="main-nav__link main-nav__link--main" href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="main-nav__item main-nav__item--photo">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item main-nav__item--logo">
+              <a class="main-nav__logo" href="index.html">
+                <img
+                  class="main-nav__logo-image"
+                  src="img/logo-sedona.svg"
+                  width="185"
+                  height="96"
+                  alt="Седона. Поиск гостиниц"
+                />
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--form">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item main-nav__item--academy">
+              <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <section class="slogan slogan-catalog">
           <h2 class="visually-hidden">Седона-это про красоту</h2>
-          <div class="slogan__wrapper">
+          <div class="slogan__wrapper slogan__wrapper--catalog">
             <picture>
-              <source media="(min-width: 1200px)" srcset="../img/sedona-title-desktop.svg">
-              <source media="(min-width: 768px)" srcset="../img/sedona-title-desktop.svg">
-              <img class="slogan__wrapper-text" src="img/sedona-title.svg" width="229" height="39" alt="Великолепная Седона">
+              <source
+                media="(min-width: 1200px)"
+                srcset="../img/sedona-title-desktop.svg" />
+              <source
+                media="(min-width: 768px)"
+                srcset="../img/sedona-title-desktop.svg" />
+              <img
+                class="slogan__wrapper-text"
+                src="img/sedona-title.svg"
+                width="229"
+                height="39"
+                alt="Великолепная Седона"
+            /></picture>
           </div>
         </section>
-        <section class="page-about">
-          <h2 class="page-about__title">Фото и видео</h2>
+        <section class="page-about page-about--catalog">
+          <h2 class="page-about__title page-about__title--catalog">
+            Фото и видео
+          </h2>
           <p class="page-about__description">
             Не можете решиться на путешествие из-за курса ? Фотографии помогут
             вам забыть о политике и экономике.
@@ -102,24 +179,27 @@
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item--road"
             >
-              <picture class="attractions-sightseeing__image">
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="img/road-desktop.jpg, img/road-desktop-2x.jpg 2x"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="img/road-tablet.jpg, img/road-tablet-2x.jpg 2x"
-                />
-                <img
-                  class="attractions-sightseeing__picture attractions-sightseeing__picture--road"
-                  src="img/road-mobile.jpg"
-                  srcset="img/road-mobile-2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Изображение дороги"
-                />
-              </picture>
+              <a class="attractions-sightseeing__link" href="#"
+                ><picture
+                  class="attractions-sightseeing__image attractions-sightseeing__image--road"
+                >
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/road-desktop.jpg, img/road-desktop-2x.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/road-tablet.jpg, img/road-tablet-2x.jpg 2x"
+                  />
+                  <img
+                    class="attractions-sightseeing__picture attractions-sightseeing__picture--road"
+                    src="img/road-mobile.jpg"
+                    srcset="img/road-mobile-2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Изображение дороги"
+                  /> </picture
+              ></a>
               <div
                 class="attractions-sightseeing__container attractions-sightseeing__container--road"
               >
@@ -137,35 +217,39 @@
                   class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
                 >
                   <span class="attractions-sightseeing__likes">1350</span>
-                  <button class="attractions-sightseeing__thumb" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
+                  <button
+                    class="attractions-sightseeing__thumb"
+                    type="button"
+                    title="Палец вверх"
+                  ></button>
                 </div>
               </div>
             </li>
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item--cactus"
             >
-              <picture class="attractions-sightseeing__image">
-                <source
-                  srcset="
-                  img/cactus-desktop.jpg,
-                  img/cactus-desktop-2x.jpg 2x"
-                  media="(min-width: 1280px)"
-                />
-                <source
-                  srcset="img/cactus-mobile.jpg, img/cactus-mobile-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  class="attractions-sightseeing__picture attractions-sightseeing__picture--cactus"
-                  src="img/cactus-mobile.jpg"
-                  srcset="img/cactus-mobile-2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Изображение кактуса"
-                />
-              </picture>
+              <a class="attractions-sightseeing__link" href="#"
+                ><picture class="attractions-sightseeing__image">
+                  <source
+                    srcset="
+                      img/cactus-desktop.jpg,
+                      img/cactus-desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="img/cactus-mobile.jpg, img/cactus-mobile-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="attractions-sightseeing__picture attractions-sightseeing__picture--cactus"
+                    src="img/cactus-mobile.jpg"
+                    srcset="img/cactus-mobile-2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Изображение кактуса"
+                  /> </picture
+              ></a>
               <div
                 class="attractions-sightseeing__container attractions-sightseeing__container--cactus"
               >
@@ -183,37 +267,46 @@
                   class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
                 >
                   <span class="attractions-sightseeing__likes">143</span>
-                  <button class="attractions-sightseeing__thumb" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
+                  <button
+                    class="attractions-sightseeing__thumb"
+                    type="button"
+                    title="Палец вверх"
+                  ></button>
                 </div>
               </div>
             </li>
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item-serpentine"
             >
-              <picture class="attractions-sightseeing__image attractions-sightseeing__image--serpentine">
-                <source
-                  srcset="
-                  img/serpentine-desktop.jpg,
-                  img/serpentine-desktop-2x.jpg 2x"
-                  media="(min-width: 1280px)"
-                />
-                <source
-                  srcset="
-                  img/serpentine-tablet.jpg,
-                  img/serpentine-tablet-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
-                  src="img/serpentine-mobile.jpg"
-                  srcset="img/serpentine-mobile-2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Изображение моста"
-                />
-              </picture>
+              <a
+                class="attractions-sightseeing__link attractions-sightseeing__link--serpentine"
+                href="#"
+                ><picture
+                  class="attractions-sightseeing__image attractions-sightseeing__image--serpentine"
+                >
+                  <source
+                    srcset="
+                      img/serpentine-desktop.jpg,
+                      img/serpentine-desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      img/serpentine-tablet.jpg,
+                      img/serpentine-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="attractions-sightseeing__picture attractions-sightseeing__picture--serpentine"
+                    src="img/serpentine-mobile.jpg"
+                    srcset="img/serpentine-mobile-2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Изображение серпантина"
+                  /> </picture
+              ></a>
               <div
                 class="attractions-sightseeing__container attractions-sightseeing__container--serpentine"
               >
@@ -231,37 +324,42 @@
                   class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
                 >
                   <span class="attractions-sightseeing__likes">96</span>
-                  <button class="attractions-sightseeing__thumb" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
+                  <button
+                    class="attractions-sightseeing__thumb"
+                    type="button"
+                    title="Палец вверх"
+                  ></button>
                 </div>
               </div>
             </li>
             <li
               class="attractions-sightseeing__item attractions-sightseeing__item--bridge"
             >
-              <picture class="attractions-sightseeing__image">
-                <source
-                  srcset="
-                  img/catalog-bridge-desktop.jpg,
-                  img/catalog-bridge-desktop-2x.jpg 2x"
-                  media="(min-width: 1280px)"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/catalog-bridge-tablet.jpg,
-                    img/catalog-bridge-tablet-2x.jpg 2x"
-                />
-                <img
-                  class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
-                  src="img/catalog-bridge-mobile.jpg"
-                  srcset="img/catalog-bridge-mobile-2x.jpg 2x"
-                  width="280"
-                  height="280"
-                  alt="Изображение моста"
-                />
-              </picture>
+              <a class="attractions-sightseeing__link" href="#"
+                ><picture class="attractions-sightseeing__image">
+                  <source
+                    srcset="
+                      img/catalog-bridge-desktop.jpg,
+                      img/catalog-bridge-desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-bridge-tablet.jpg,
+                      img/catalog-bridge-tablet-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="attractions-sightseeing__picture attractions-sightseeing__picture--bridge"
+                    src="img/catalog-bridge-mobile.jpg"
+                    srcset="img/catalog-bridge-mobile-2x.jpg 2x"
+                    width="280"
+                    height="280"
+                    alt="Изображение моста"
+                  /> </picture
+              ></a>
               <div
                 class="attractions-sightseeing__container attractions-sightseeing__container--bridge"
               >
@@ -279,9 +377,11 @@
                   class="attractions-sightseeing__wrapper attractions-sightseeing__wrapper--likes"
                 >
                   <span class="attractions-sightseeing__likes">254</span>
-                  <button class="attractions-sightseeing__thumb" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
+                  <button
+                    class="attractions-sightseeing__thumb"
+                    type="button"
+                    title="Палец вверх"
+                  ></button>
                 </div>
               </div>
             </li>
@@ -295,9 +395,11 @@
             подорожали в очередной раз!
           </p>
           <div class="video-presentation__video">
-            <button class="video-presentation__button" type="button">
-              <span class="visually-hidden">Запустить презентацию</span>
-            </button>
+            <button
+              class="video-presentation__button"
+              type="button"
+              title="Запустить презентацию"
+            ></button>
           </div>
         </section>
       </main>
@@ -309,12 +411,12 @@
               <svg
                 class="vk-icon"
                 aria-hidden="true"
-                focusable="false"
                 width="24"
-                height="24">
+                height="24"
+                title="Вконтакте"
+              >
                 <use xlink:href="#icon-vk"></use>
               </svg>
-              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer__social-item">
@@ -323,10 +425,11 @@
                 class="youtube-icon"
                 aria-hidden="true"
                 width="24"
-                height="24">
+                height="24"
+                title="Телеграм"
+              >
                 <use xlink:href="#icon-yt"></use>
               </svg>
-              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer__social-item">
@@ -335,14 +438,28 @@
                 class="tg-icon"
                 aria-hidden="true"
                 width="24"
-                height="24">
+                height="24"
+                title="YouTube"
+              >
                 <use xlink:href="#icon-tg"></use>
               </svg>
-              <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
-        <a class="footer__copyright" href="#">Разработано</a>
+        <a
+          class="footer__copyright"
+          href="https://up.htmlacademy.ru/profession/frontender/14/adaptive/26"
+          >Разработано
+          <svg
+            class="academy-icon"
+            aria-hidden="true"
+            width="27"
+            height="35"
+            title="Академия"
+          >
+            <use xlink:href="#icon-academy"></use>
+          </svg>
+        </a>
       </footer>
     </div>
   </body>
