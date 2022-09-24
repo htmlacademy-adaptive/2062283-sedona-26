@@ -1,5 +1,6 @@
 .modal-sent__wrapper {
-  display: none;
+  visibility: hidden;
+  display: flex;
   position: relative;
   margin: auto;
   width: 100%;
@@ -16,7 +17,7 @@
 }
 
 .modal-sent__details-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -27,7 +28,7 @@
 }
 
 .modal-sent__details-description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -35,7 +36,7 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 53px;
   color: rgba(51, 51, 51, 1);
   width: min(100%, 244px);
 }
@@ -53,9 +54,9 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   display: flex;
   justify-content: center;
   width: 90%;
@@ -68,17 +69,17 @@
   .modal-sent__wrapper {
     width: min(100%, 600px);
     height: 300px;
-    padding-top: 44px;
+    padding-top: 53px;
   }
 
   .modal-sent__details-title {
-    font-size: 21px;
+    font-size: 30px;
     width: min(100%, 444px);
     text-align: center;
   }
 
   .modal-sent__details-description {
-    margin-bottom: 35px;
+    margin-bottom: 66px;
     width: min(100%, 420px);
   }
 
@@ -89,5 +90,10 @@
   .modal-sent__button {
     box-sizing: border-box;
     padding: 35px 24px;
+  }
+
+  .modal-sent__button-name {
+    font-size: 21px;
+    width: 83%;
   }
 }

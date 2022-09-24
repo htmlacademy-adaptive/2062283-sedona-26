@@ -4,19 +4,28 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 11px;
+}
+
+.advantages-catalog__item-container--bridge {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .advantages-catalog__item-wrapper {
   background-color: #81b3d2;
   display: flex;
   flex-direction: column;
-  padding-top: 54px;
+  padding-top: 70px;
   padding-bottom: 40px;
   padding-left: 17px;
   padding-right: 17px;
   color: #eeeeee;
   align-items: center;
+}
+
+.advantages-catalog__item-wrapper--bridge {
+  padding: 39px 16px 35px;
 }
 
 .advantages-catalog__picture {
@@ -36,7 +45,7 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 }
 
 .advantages-catalog__description {
@@ -55,6 +64,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.addition-list__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
 
 .addition-list__description {
   font-weight: 400;
@@ -76,6 +94,7 @@
   position: relative;
   padding-right: 30px;
   padding-left: 65px;
+  padding-top: 31px;
 }
 
 .addition-list__item--housing::before {
@@ -91,7 +110,8 @@
 .addition-list__item--food {
   position: relative;
   padding-right: 30px;
-  padding-left: 65px;
+  padding-left: 69px;
+  padding-top: 29px;
 }
 
 .addition-list__item--food::before {
@@ -107,8 +127,9 @@
 .addition-list__item--gift {
   position: relative;
   padding-right: 30px;
-  padding-left: 65px;
+  padding-left: 62px;
   padding-bottom: 52px;
+  padding-top: 29px;
 }
 
 .addition-list__item--gift::before {
@@ -131,13 +152,21 @@
 .secondary-list__item {
   position: relative;
   background-color: #eeeeee;
-  padding-top: 42px;
+  padding-top: 26px;
   padding-left: 33px;
   padding-right: 34px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.secondary-list__item--road {
+  padding-top: 8px;
+}
+
+.secondary-list__item--tourists {
+  padding-top: 10px;
 }
 
 .secondary-list__item--square::before,
@@ -173,7 +202,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 }
 
 .secondary-list__description {
@@ -186,13 +215,52 @@
   color: #333333;
 }
 
+.addition-list__description--food {
+  width: 110%;
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-catalog__item-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
     height: 256px;
+  }
+
+  .advantages-catalog__item-wrapper {
+    background-color: #81b3d2;
+    display: flex;
+    flex-direction: column;
+    padding: 39px 0 0;
+    color: #eeeeee;
+    align-items: center;
+    width: 33.3%;
+  }
+
+  .advantages-catalog__title {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 12px;
+    font-size: 21px;
+  }
+
+  .advantages-catalog__title--bridge {
+    width: 58%;
+    margin-bottom: 16px;
+  }
+
+  .advantages-catalog__number--city {
+    margin-bottom: 22px;
+  }
+
+  .advantages-catalog__number--bridge {
+    margin-bottom: 23px;
+  }
+
+  .advantages-catalog__description {
+    width: 76%;
   }
 
   .advantages-catalog__background {
@@ -200,12 +268,23 @@
   }
 
   .secondary-list__title {
+    font-size: 21px;
     max-width: 120px;
+    margin-bottom: 13px;
+  }
+
+  .secondary-list__number {
+    margin-bottom: 22px;
   }
 
   .addition-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .addition-list__title {
+    font-size: 21px;
+    margin-bottom: 22px;
   }
 
   .addition-list__item {
@@ -215,6 +294,14 @@
     padding-top: 158px;
     width: 33.3%;
     box-sizing: border-box;
+  }
+
+  .addition-list__description--food {
+    width: 82%;
+  }
+
+  .addition-list__description--gift {
+    width: 104%;
   }
 
   .addition-list__item--housing {
@@ -282,7 +369,7 @@
   .secondary-list {
     display: flex;
     box-sizing: border-box;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
   }
 
   .secondary-list__item:not(:last-child) {
@@ -303,16 +390,22 @@
     max-width: 150px;
   }
 
+  .secondary-list__item--road {
+    padding-left: 40px;
+    width: 24.3%;
+  }
   .secondary-list__item--tourists {
     padding-bottom: 42px;
     padding-left: 41px;
     padding-right: 40px;
+    width: 23.4%;
   }
 
   .secondary-list__item--square {
     padding-bottom: 63px;
     padding-left: 33px;
     padding-right: 34px;
+    width: 23.3%;
   }
 
   .secondary-list__item--square::before,
@@ -329,9 +422,18 @@
 
   .advantages-catalog__item-wrapper {
     justify-content: space-between;
-    padding-left: 34px;
-    padding-right: 34px;
-    width: 33.3%;
+    padding: 53px 17px 40px;
+    width: 30.7%;
+  }
+
+  .advantages-catalog__title {
+    width: 33%;
+    text-align: center;
+  }
+
+  .advantages-catalog__title--bridge {
+    width: 41%;
+    margin-bottom: 18px;
   }
 
   .advantages-catalog__picture {
@@ -342,6 +444,23 @@
 
   .addition-list {
     justify-content: space-around;
+  }
+
+  .addition-list__title {
+    margin-bottom: 27px;
+  }
+
+  .addition-list__description {
+    width: 87%;
+  }
+
+  .advantages-catalog__description {
+    width: 73%;
+    margin-bottom: 16px;
+  }
+
+  .advantages-catalog__description--bridge {
+    width: 63%;
   }
 
   .advantages-catalog__item--secondary {
@@ -356,12 +475,16 @@
     bottom: 50%;
     transform: translate(-50%, 50%);
   }
-}
 
-.addition-list__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+  .secondary-list__item {
+    padding-top: 46px;
+    width: 27.1%;
+  }
+  .secondary-list__description--road {
+    max-width: 79.9%;
+  }
+
+  .secondary-list__description--tourists {
+    max-width: 79.9%;
+  }
 }
