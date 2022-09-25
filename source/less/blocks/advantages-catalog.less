@@ -159,6 +159,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .secondary-list__item--road {
@@ -167,6 +169,7 @@
 
 .secondary-list__item--tourists {
   padding-top: 10px;
+  padding-bottom: 26px;
 }
 
 .secondary-list__item--square::before,
@@ -178,10 +181,6 @@
   height: 1px;
   background-color: #d6d6d6;
   bottom: 0;
-}
-
-.secondary-list__item--tourists {
-  padding-bottom: 26px;
 }
 
 .secondary-list__title {
@@ -378,7 +377,7 @@
 
   .secondary-list__item {
     padding-top: 42px;
-    width: 33.3%;
+    width: 33.33%;
     background-color: #eeeeee;
   }
 
@@ -392,20 +391,21 @@
 
   .secondary-list__item--road {
     padding-left: 40px;
-    width: 24.3%;
+    width: 33.33%;
   }
+
   .secondary-list__item--tourists {
     padding-bottom: 42px;
     padding-left: 41px;
     padding-right: 40px;
-    width: 23.4%;
+    width: 33.33%;
   }
 
   .secondary-list__item--square {
     padding-bottom: 63px;
     padding-left: 33px;
     padding-right: 34px;
-    width: 23.3%;
+    width: 33.33%;
   }
 
   .secondary-list__item--square::before,
@@ -442,10 +442,6 @@
     object-position: center;
   }
 
-  .addition-list {
-    justify-content: space-around;
-  }
-
   .addition-list__title {
     margin-bottom: 27px;
   }
@@ -478,8 +474,9 @@
 
   .secondary-list__item {
     padding-top: 46px;
-    width: 27.1%;
+    width: 33.33%;
   }
+
   .secondary-list__description--road {
     max-width: 79.9%;
   }

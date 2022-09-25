@@ -78,15 +78,15 @@
       <header class="main-header">
         <nav class="main-nav">
           <button
-            class="main-nav__toggle main-nav__toggle--opened"
+            class="main-nav__toggle main-nav__toggle--closed"
             type="button"
+            aria-label="Открыть меню"
           >
             <svg
               class="main-nav__close"
               aria-hidden="true"
               width="23"
               height="23"
-              title="Открыть меню"
               viewBox="0 0 23 23"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -100,13 +100,13 @@
           <button
             class="main-nav__toggle main-nav__toggle--closed"
             type="button"
+            aria-label="Закрыть меню"
           >
             <svg
               class="main-nav__open"
               aria-hidden="true"
               width="24"
               height="20"
-              title="Закрыть меню"
               viewBox="0 0 24 20"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@
               <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
             </svg>
           </button>
-          <ul class="main-nav__list main-nav__list--closed">
+          <ul class="main-nav__list main-nav__list--opened">
             <li class="main-nav__item main-nav__item--main">
               <a class="main-nav__link main-nav__link--main" href="index.html"
                 >Главная</a
@@ -138,7 +138,9 @@
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item main-nav__item--academy">
-              <a class="main-nav__link" href="htmlacademy.ru">Html Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru"
+                >Html Academy</a
+              >
             </li>
           </ul>
         </nav>
@@ -393,40 +395,39 @@
         <span class="footer__hashtag">#Visitsedona</span>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg
-                class="vk-icon"
-                aria-hidden="true"
-                width="24"
-                height="24"
-                title="Вконтакте"
-              >
+            <a
+              class="footer__social-link"
+              href="#"
+              aria-label="страница Вконтакте"
+            >
+              <svg class="vk-icon" aria-hidden="true" width="24" height="24">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a
+              class="footer__social-link"
+              href="#"
+              aria-label="страница YouTube"
+            >
               <svg
                 class="youtube-icon"
                 aria-hidden="true"
                 width="24"
                 height="24"
-                title="Телеграм"
               >
                 <use xlink:href="#icon-yt"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg
-                class="tg-icon"
-                aria-hidden="true"
-                width="24"
-                height="24"
-                title="YouTube"
-              >
+            <a
+              class="footer__social-link"
+              href="#"
+              aria-label="страница Телеграм"
+            >
+              <svg class="tg-icon" aria-hidden="true" width="24" height="24">
                 <use xlink:href="#icon-tg"></use>
               </svg>
             </a>
@@ -435,14 +436,9 @@
         <a
           class="footer__copyright"
           href="https://up.htmlacademy.ru/profession/frontender/14/adaptive/26"
+          aria-label="страница Академии"
           >Разработано
-          <svg
-            class="academy-icon"
-            aria-hidden="true"
-            width="27"
-            height="35"
-            title="Академия"
-          >
+          <svg class="academy-icon" aria-hidden="true" width="27" height="35">
             <use xlink:href="#icon-academy"></use>
           </svg>
         </a>
